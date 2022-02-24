@@ -1,0 +1,74 @@
+﻿body {
+    
+}
+
+.box {
+    width: 550px;
+    padding: 10px 0px 10px 0px;
+    background-color: #E5E5E5;
+    border-radius: 35px 35px 35px 35px;
+    margin: 25px 0px 25px 0px;
+}
+
+.texttitle {
+    font-family: 'fantasy';
+    font-weight: 500;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    color: #000;
+}
+
+.inputlabel {
+    color: #0055FF;
+    margin-right: 310px;
+}
+
+.errorlabel {
+    font-family: 'ABeeZee';
+    margin-left: -190px;
+    color: red;
+    font-size: 18px;
+}
+
+.accounterrorlabel {
+    font-family: 'ABeeZee';
+    margin-left: 0%;
+    color: red;
+    font-size: 18px;
+}
+
+.inputtextbox {
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    resize: none;
+    text-align: left;
+    width: 73%;
+}
+
+.buttondesign {
+    font-style: italic;
+    height: 50px;
+    width: 200px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 8px 6px;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    color: #99eeb4;
+    background-color: black;
+    letter-spacing: 0.2em;
+    overflow: hidden;
+    box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
+}

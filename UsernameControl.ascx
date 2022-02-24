@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UsernameControl.ascx.cs" Inherits="WebAssignment.UsernameControl" %>
+<asp:Label ID="usernametext" runat="server" Text="Label" class="nav-link" style="color:blue"></asp:Label>
