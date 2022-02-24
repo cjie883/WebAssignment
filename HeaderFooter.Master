@@ -84,7 +84,7 @@
                             <a class="nav-link" href="About.aspx">About Us</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="help.aspx">Help</a>
+                            <a class="nav-link" href="Help.aspx">Help</a>
                         </li>
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" Visible="False" OnClick="LinkButton3_Click">My Artwork</asp:LinkButton>
