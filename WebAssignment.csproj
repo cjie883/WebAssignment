@@ -68,9 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Artdist.mdf" />
-    <Content Include="App_Data\Artdist_log.ldf">
-      <DependentUpon>Artdist.mdf</DependentUpon>
-    </Content>
     <Content Include="css\aboutUs.css" />
     <Content Include="css\add.css" />
     <Content Include="css\animation.css" />
