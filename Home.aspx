@@ -23,8 +23,9 @@
           <h3>Exploring The World</h3>
           <p>We have got plenty of cool stuff in store for you right now,</p>
           <p>and plenty more coming your way.</p>
-          <a href="art.aspx">Explore</a>    
-          <a href="art.aspx" style="background: white;text-align: center;padding-left: 85px;"><img style="text-align: center;width:15%;" src="imgs/Artdist.png"></a>
+          <a href="art.aspx">Explore</a>  
+          <a href="About.aspx">About Us</a>
+          <%--<a href="art.aspx" style="background: white;text-align: center;padding-left: 85px;"><img style="text-align: center;width:15%;" src="imgs/Artdist.png"></a>--%>
         </div>
     
         <ul class="social">
