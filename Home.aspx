@@ -12,7 +12,7 @@
 
     <section class="showcase">
         <header>
-          <h2 class="logo">ARTDIST</h2>
+          <h2 class="logo">WSP Art Gallery</h2>
         </header>
 
         
