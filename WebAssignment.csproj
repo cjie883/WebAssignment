@@ -149,6 +149,10 @@
     <Content Include="imgs\rainbowCat.gif" />
     <Content Include="imgs\team1.jpg" />
     <Content Include="imgs\team2.jpg" />
+    <Content Include="imgs\WSP.png" />
+    <Content Include="imgs\WSP1.png" />
+    <Content Include="imgs\WSPlogo.png" />
+    <Content Include="imgs\WSP_New.png" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="UsernameControl.ascx" />
