@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-    
+    <link rel="icon" type="image/x-icon" href="imgs/site_icon.png">
     <%--bootstrap css--%>
     <link href="css/bootstrap.min.css" rel="stylesheet" />  
     <%--our custom css--%>
@@ -22,6 +22,31 @@
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
     color: #C45AEC !important;
+}
+
+.socialIcon a{
+    color: black !important;
+}
+
+.socialIcon a:hover{
+    color: #C45AEC !important;
+}
+
+.pagelink a{
+    color:black !important;
+}
+
+.pagelink a:hover{
+    color:#C45AEC !important;
+    text-decoration: initial !important;
+}
+
+.bottomlink a{
+    color:#C45AEC !important;
+}
+
+.bottomlink a:hover{
+    color:#C45AEC !important;
 }
 
 .dropdown {
@@ -50,6 +75,7 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 </style>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     </asp:ContentPlaceHolder>
@@ -163,31 +189,27 @@
 
             <div class="container">
               <div class="row py-4 d-flex align-items-center">
-                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0"></div>
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <img src="imgs/WSP_New1.png" width="120" height="40" />
+                </div>
                 <div class="col-md-6 col-lg-7 text-center text-md-right">
 
-                  <!-- Facebook -->
-                  <a href="https://www.facebook.com/andrew.feng.18">
-                    <i class="fab fa-facebook-f white-text mr-4"> </i>
-                  </a>
-                  <!-- Twitter -->
-                  <a class="tw-ic">
-                    <i class="fab fa-twitter white-text mr-4"> </i>
-                  </a>
-                  <!-- Google +-->
-                  <a class="gplus-ic">
-                    <i class="fab fa-google-plus-g white-text mr-4"> </i>
-                  </a>
-                  <!--Linkedin -->
-                  <a class="li-ic">
-                    <i class="fab fa-linkedin-in white-text mr-4"> </i>
-                  </a>
-                  <!--Instagram-->
-                  <a class="ins-ic">
-                    <i class="fab fa-instagram white-text"> </i>
-                  </a>
-
+                    <div class="socialIcon">
+                        <a href="https://www.facebook.com/dissy.official">
+                            <i class="fab fa-facebook-f white-text mr-4"></i>
+                        </a>
+                        <a href="https://www.youtube.com/c/dissyofficial">
+                            <i class="fab fa-youtube white-text mr-4"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=60137780737&text=Hi,%20Im%20WSP">
+                            <i class="fab fa-whatsapp white-text mr-4"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dissy.official/">
+                            <i class="fab fa-instagram white-text"></i>
+                        </a>
+                    </div>
                 </div>
+                  
               </div>
             </div>
           </div>
@@ -197,16 +219,17 @@
             <div class="row mt-3">
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
-                <h6 class="text-uppercase font-weight-bold">Artdist</h6>
+                <h6 class="text-uppercase font-weight-bold">Our Story</h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>Founded in 1995 by Uncle Loong, XL-Shop.com is the premier importer of Japanese collectibles and the sole distributor of Hot Toys in Malaysia. With four outlets...<a href="about_us.jsp">read more</a></p>
+                <p>Founded in 2022 by 3 people, WSP Art Gallery is an art buying and selling website. Art is our philosophy</p>
               </div>
 
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase font-weight-bold">Page links</h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
+                <div class="pagelink">
+                  <p>
                     <a href="home.aspx">Home</a>
                 </p>
                 <p>
@@ -218,6 +241,7 @@
                 <p>
                   <a href="help.aspx">Help</a>
                 </p>
+                 </div>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
@@ -225,18 +249,19 @@
                 <h6 class="text-uppercase font-weight-bold">Contact</h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
-                  <i class="fas fa-home mr-3"></i>Puteri Park Plaza, Lot 114B & C, 2nd Floor, Jalan 28,
-        Taman Putra, 68000 Ampang, Selangor Darul Ehsan, Malaysia.</p>
+                  <i class="fas fa-home mr-3"></i>6A, Jalan Cempaka 16, Taman Cempaka, Kuala Lumpur, 68000</p>
                 <p>
-                  <i class="fas fa-envelope mr-3"></i>Artdististhebest@gmail.com</p>
+                  <i class="fas fa-envelope mr-3"></i>Support@wspgallery.com</p>
                 <p>
-                  <i class="fas fa-phone mr-3"></i> + 60-168965742</p>
+                  <i class="fas fa-phone mr-3"></i> + 60-123456789</p>
               </div>
             </div>
           </div>
-          <div style="background-color: #e0e0e0;" class="footer-copyright text-center py-3">Â© 2020 Copyright:
-            <a href="home.aspx"> Artdist</a>
+            <div class="bottomlink">
+          <div style="background-color: #e0e0e0;" class="footer-copyright text-center py-3">Created by Leong Jia Cheng | Wong Soon Peng | Lee Jin Shiun © 2022 Copyright by
+            <a href="home.aspx"> Wsp Art Gallery</a>
           </div>
+                </div>
         </footer>
          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
