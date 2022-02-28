@@ -88,12 +88,12 @@ namespace WebAssignment
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("SelectRegister.aspx");
+            Response.Redirect("Register.aspx");
         }
 
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("SelectLogin.aspx");
+            Response.Redirect("Login.aspx");
         }
 
         protected void LinkButton15_Click(object sender, EventArgs e)

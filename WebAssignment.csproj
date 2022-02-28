@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="App_Data\Artdist.mdf" />
+    <Content Include="ArtistLogin.aspx" />
+    <Content Include="ArtistRegister.aspx" />
     <Content Include="css\aboutUs.css" />
     <Content Include="css\add.css" />
     <Content Include="css\animation.css" />
@@ -152,6 +154,9 @@
     <Content Include="imgs\WSP_New.png" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\popper.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="LoginControl.ascx" />
+    <Content Include="Register.aspx" />
     <Content Include="UsernameControl.ascx" />
     <Content Include="video\home.mp4" />
     <Content Include="video\home4.mp4" />
@@ -164,6 +169,20 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistLogin.aspx.cs">
+      <DependentUpon>ArtistLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistLogin.aspx.designer.cs">
+      <DependentUpon>ArtistLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistRegister.aspx.cs">
+      <DependentUpon>ArtistRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistRegister.aspx.designer.cs">
+      <DependentUpon>ArtistRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="Gallery.aspx.cs">
       <DependentUpon>Gallery.aspx</DependentUpon>
@@ -193,7 +212,27 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginControl.ascx.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginControl.ascx.designer.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UsernameControl.ascx.cs">
       <DependentUpon>UsernameControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
