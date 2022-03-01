@@ -3,33 +3,46 @@
 }
 
 .box {
-    width: 550px;
-    padding: 10px 0px 10px 0px;
-    background-color: #E5E5E5;
-    border-radius: 35px 35px 35px 35px;
-    margin: 25px 0px 25px 0px;
+    margin: 55px 0px 55px 0px;
+    padding: 35px 0px 35px 0px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 700px;
+    max-width: 100%;
+    min-height: 480px;
 }
 
 .texttitle {
-    font-family: 'fantasy';
-    font-weight: 500;
-    font-size: 60px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
     color: #000;
 }
 
 .inputlabel {
-    color: #0055FF;
-    margin-right: 310px;
+    color: #000;
+    margin-right: 440px;
 }
 
 .errorlabel {
-    font-family: 'ABeeZee';
-    margin-left: -190px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -320px;
     color: red;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+.forgot a{
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.forgot a:hover {
+    color: #C45AEC;
 }
 
 .accounterrorlabel {
@@ -40,35 +53,31 @@
 }
 
 .inputtextbox {
-    padding: 10px 10px 10px 10px;
-    box-sizing: border-box;
-    border: 2px solid #000;
+    padding: 12px 15px;
+    border: none;
     border-radius: 4px;
-    background-color: white;
-    font-size: 14px;
-    resize: none;
-    text-align: left;
+    background-color: #eee;
     width: 73%;
 }
 
+.registerlbl {
+    color: #000;
+    font-size: 16px;
+}
+
 .buttondesign {
-    font-style: italic;
-    height: 50px;
-    width: 200px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 8px 6px;
-    cursor: pointer;
-    font-family: Helvetica, sans-serif;
-    font-weight: 100;
-    color: #99eeb4;
-    background-color: black;
-    letter-spacing: 0.2em;
-    overflow: hidden;
-    box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
+    border-radius: 20px;
+    border: 1px solid #C45AEC;
+    background-color: #C45AEC;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.buttondesign:hover{
+    background-color: red;
+    border: 1px solid red;
 }

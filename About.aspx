@@ -84,8 +84,6 @@ We stock mostly funny art, both contemporary and old masters and pioneers works 
       </div>
     </div>
   </div>
-
-      
         
         <div>
             <h1 class="partner text-center" data-aos="fade-up">Our Products</h1>

@@ -22,6 +22,7 @@ else
 {
 %>
 <center>
+    
     <div class="box">
         <center>
             <asp:Label ID="Title" Cssclass="texttitle" runat="server"></asp:Label></center>
@@ -37,12 +38,13 @@ else
         <br />
         <asp:Label ID="Label4" runat="server" Visible="false" CssClass="errorlabel"></asp:Label>
         <br />
-        <a href="Forgotpassword.aspx"> Forgot Password? </a>
-        <br />
+        <div class="forgot"><a href="Forgotpassword.aspx"> Forgot Your Password? </a></div>
         <asp:Label ID="Label5" runat="server" Visible="false" CssClass="accounterrorlabel"></asp:Label>
         <br />
-    <asp:Button ID="Login" runat="server" Text="Sign In" OnClick="Login_Click" class="buttondesign"/>
-        <br />
+    <asp:Button ID="Login" runat="server" Text="Login In" OnClick="Login_Click" class="buttondesign"/>
+        <br /><br />
+        <asp:Label ID="registerlabel" runat="server" CssClass="registerlbl" Text="Don't have an account? Sign Up now"></asp:Label>
+        <br /><br />
         <asp:Button ID="Register" runat="server" Text="Sign Up" OnClick="Register_Click" class="buttondesign"/>
         </div>
         </center>

@@ -69,6 +69,9 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="App_Data\Artdist.mdf" />
+    <Content Include="App_Data\Artdist_log.ldf">
+      <DependentUpon>Artdist.mdf</DependentUpon>
+    </Content>
     <Content Include="ArtistLogin.aspx" />
     <Content Include="ArtistRegister.aspx" />
     <Content Include="css\aboutUs.css" />
@@ -81,6 +84,7 @@
     <Content Include="css\help.css" />
     <Content Include="css\home.css" />
     <Content Include="css\login.css" />
+    <Content Include="css\login1.css" />
     <Content Include="css\product_detail.css" />
     <Content Include="css\Register.css" />
     <Content Include="css\ViewProfile.css" />
@@ -221,6 +225,7 @@
     </Compile>
     <Compile Include="LoginControl.ascx.cs">
       <DependentUpon>LoginControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LoginControl.ascx.designer.cs">
       <DependentUpon>LoginControl.ascx</DependentUpon>
