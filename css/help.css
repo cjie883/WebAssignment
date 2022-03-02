@@ -1,18 +1,90 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Jul 27, 2020, 8:45:38 PM
-    Author     : gy
-*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background: url("../imgs/back_ground.jpg") fixed;
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    width: 700px;
+    margin: 50px auto;
+    margin-bottom: 100px;
+}
+
+.accordion {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+    .accordion:last-child {
+        margin-bottom: 0;
+    }
+
+.accordion-label {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+    .accordion-label:hover {
+        background-image: linear-gradient(225deg,#C45AEC 0%, #ac69e4 0%, #b663e2 100%);
+    }
+
+    .accordion-label::after {
+        content: "\276F";
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+.accordion-content {
+    max-height: 0;
+    padding: 0 16px;
+    background-image: linear-gradient(225deg,#C45AEC 0%, #ac69e4 0%, #b663e2 100%);
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+    .accordion-content p {
+        margin: 0;
+        color: black;
+        text-align: center;
+        font-size: 18px;
+    }
+
+input:checked + .accordion-label {
+    background-image: linear-gradient(225deg,#C45AEC 0%, #ac69e4 0%, #b663e2 100%);
+}
+
+    input:checked + .accordion-label::after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+input:checked ~ .accordion-content {
+    max-height: 100vh;
+    padding: 16px;
 }

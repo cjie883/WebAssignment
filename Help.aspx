@@ -1,79 +1,83 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/HeaderFooter.Master" CodeBehind="Help.aspx.cs" Inherits="WebAssignment.Help" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <link href="css/help.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="css/help.css" rel="stylesheet">
 
     <div class="m-5">
-            
-        </div>
-           
-            
-            <div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav ">
-        
     </div>
-      
-    <div class="col-sm-8 text-left shadow p-3 mb-5 bg-white rounded"> 
-         <h1 class="text-center m-5">How to Purchase</h1>
-         
-         <div class="m-5 pb-5">
-                <h2 class="text-center" data-aos="fade-down">STEP: 1</h2>
-               <hr>
-               <img style="height: 250px;" src="imgs/howto-01.jpg" class="mx-auto d-block mb-3" data-aos="flip-left">
-               <p class="text-center" data-aos="fade-up">Browse our website and choose the items you like by clicking the "Add to<br>cart" button. You can add as many items as you want into the shopping<br>cart. After that, you can checkout by filling your information in a simple<br>form. During checkout, you DO NOT have to make any payment.<br><br></p>
-               <hr>
+    <h1>Frequently-asked Questions</h1>
+    <div class="accordion-wrapper">
+        <div class="accordion">
+            <input type="radio" name="radio-a" id="check1" checked>
+            <label class="accordion-label" for="check1">How to find our web application?</label>
+            <div class="accordion-content">
+                <img style="height: 250px;" src="imgs/s1.jpg" class="mx-auto d-block mb-3">
+                <p>
+                    Open any browser from any electronic device and search for the keyword "WSP Art Gallery" to discover us! Or you can find us through major social media including facebook, youtube and istagram!
+                </p>
+            </div>
         </div>
-         
-         <div class="m-5 pb-5">
-                <h2 class="text-center" data-aos="fade-down">STEP: 2</h2>
-               <hr>
-               <img style="height: 250px;" src="imgs/howto-02.jpg" class="mx-auto d-block mb-3" data-aos="flip-right">
-               <p class="text-center" data-aos="fade-up">After receiving your order, we will calculate the shipping cost for your<br>order, we will email you the total shipping cost in less than 48 hours.<br><br></p>
-               <hr>
+        <div class="accordion">
+            <input type="radio" name="radio-a" id="check2">
+            <label class="accordion-label" for="check2">How to make an order?</label>
+            <div class="accordion-content">
+                <img style="height: 250px;" src="imgs/s2.jpg" class="mx-auto d-block mb-3">
+                    <p>
+                        After opening our web application, you can reach the art sales interface by single-clicking the gallery in the upper menu bar. In this interface, you can view all works of art including information and the prices of works. Also, there will be an add to cart button below each item, in order to make a purchase
+                    </p>
+            </div>
         </div>
-        
-          <div class="m-5 pb-5">
-                <h2 class="text-center" data-aos="fade-down">STEP: 3</h2>
-               <hr>
-               <img style="height: 250px;" src="imgs/howto-03.jpg" class="mx-auto d-block mb-3" data-aos="flip-left">
-               <p class="text-center" data-aos="fade-up">Once you have received shipping cost from us, you can make payment<br>now. We offer different payment methods for you to choose from, please<br>refer to<strong>Buyers Guide</strong> below to learn more.<br><br></p>
-               <hr>
+        <div class="accordion">
+            <input type="radio" name="radio-a" id="check3">
+            <label class="accordion-label" for="check3">How to make payment?</label>
+            <div class="accordion-content">
+                <img style="height: 250px;" src="imgs/s3.jpg" class="mx-auto d-block mb-3">
+                    <p>
+                        After the item is successfully added to the shopping cart, you can press the following button, which is check out button to proceed to the payment step, and you can make the transaction through online transfer or credit card.
+                    </p>
+            </div>
         </div>
-         
-         <div class="m-5 pb-5">
-                <h2 class="text-center" data-aos="fade-down">STEP: 4</h2>
-               <hr>
-               <img style="height: 250px;" src="imgs/howto-04.jpg" class="mx-auto d-block mb-3" data-aos="flip-right">
-               <p class="text-center" data-aos="fade-up">After your payment has been received, your items will be delivered by<br>Express Mail Service(EMS). The items should be arrived within 3 - 5 days<br>depends on your location.<br><br></p>
-               <hr>
+        <div class="accordion">
+            <input type="radio" name="radio-a" id="check4">
+            <label class="accordion-label" for="check4">How long will it take to deliver?</label>
+            <div class="accordion-content">
+                <img style="height: 250px;" src="imgs/s4.jpg" class="mx-auto d-block mb-3">
+                    <p>
+                        After successful payment, we will ship the goods within 1-3 working days, and entrust professional deliverymen to help us deliver the items to your doorstep.
+                    </p>
+            </div>
         </div>
-           
+         <div class="accordion">
+            <input type="radio" name="radio-a" id="check5">
+            <label class="accordion-label" for="check5">How to receive parcel items?</label>
+            <div class="accordion-content">
+                <img style="height: 250px;" src="imgs/s5.jpg" class="mx-auto d-block mb-3">
+                    <p>
+                        A professional delivery man will deliver to the correct address, and you need to verify your identity with the delivery man in order to receive your parcel.
+                    </p>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-2 sidenav ">
-        
-      </div>
-    </div>
-  </div>
-            
-     
-        
-          <jsp:include page="headerfooter/UserFooter.jsp" />
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-            <script type="text/javascript">
-	AOS.init({
-		duration : 1200,
-	})
-</script>
+
+
+
+    <jsp:include page="headerfooter/UserFooter.jsp" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </asp:Content>
