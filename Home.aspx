@@ -17,7 +17,7 @@
 
         
         <div class="overlay"></div>
-        <video src="video/home.mp4" muted loop autoplay></video>
+        <video src="video/Comp.mp4" muted loop autoplay></video>
         <div class="text">
           <h2>Never Stop To </h2>
           <h3>Exploring The World</h3>

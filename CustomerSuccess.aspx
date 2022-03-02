@@ -5,7 +5,7 @@
     <link href="css/ViewProfile.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
     
-    <label class="registersuccessword">Register Successfully!Welcome to Artdist!</label>
+    <label class="registersuccessword">Register Successfully! Welcome to WSP Art Gallery!</label>
     <center>
     <div class="box">
     <h2>Your Registration Info</h2>
