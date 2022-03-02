@@ -83,7 +83,7 @@ namespace WebAssignment
                             Session["CustomerPhone"] = phone.ToString();
                             Session["CustomerEmail"] = email.ToString();
                             Session["CustomerAddress"] = address.ToString();
-                            Response.Redirect("home.aspx");
+                            Response.Redirect("Home.aspx");
                         }
                     }
                     else
@@ -130,7 +130,7 @@ namespace WebAssignment
                             Session["ArtistEmail"] = email.ToString();
                             Session["ArtistAddress"] = address.ToString();
                             Session["Category"] = null;
-                            Response.Redirect("home.aspx");
+                            Response.Redirect("Home.aspx");
                         }
                     }
                     else

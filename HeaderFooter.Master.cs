@@ -62,7 +62,7 @@ namespace WebAssignment
         protected void LinkButton9_Click(object sender, EventArgs e)
         {
             Session.Clear();
-            Response.Redirect("home.aspx");
+            Response.Redirect("Home.aspx");
 
         }
 

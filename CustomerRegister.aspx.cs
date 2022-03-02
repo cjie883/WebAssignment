@@ -8,18 +8,14 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 
+
 namespace WebAssignment
 {
-    public partial class ArtistRegister : System.Web.UI.Page
+    public partial class CustomerRegister : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void LinkButton2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("ArtistLogin.aspx");
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
@@ -150,17 +146,17 @@ namespace WebAssignment
 
             if (TextBox6.Text.Trim().Equals(""))
             {
-                Label13.Text = "Please enter your phone number<br/>";
-                Label13.Visible = true;
+                Label15.Text = "Please enter your phone number<br/>";
+                Label15.Visible = true;
             }
             else if (CheckPhone(TextBox6.Text.Trim()) == false)
             {
-                Label13.Text = "Invalid Phone Number (Example:01234567890)<br/>";
-                Label13.Visible = true;
+                Label15.Text = "Invalid Phone Number (Example:01234567890)<br/>";
+                Label15.Visible = true;
             }
             else
             {
-                Label13.Visible = false;
+                Label15.Visible = false;
             }
 
             if (TextBox7.Text.Trim().Equals(""))
@@ -180,12 +176,12 @@ namespace WebAssignment
 
             if (TextBox8.Text.Trim().Equals(""))
             {
-                Label15.Text = "Please enter your address<br/>";
-                Label15.Visible = true;
+                Label13.Text = "Please enter your address<br/>";
+                Label13.Visible = true;
             }
             else
             {
-                Label15.Visible = false;
+                Label13.Visible = false;
             }
 
             if (!TextBox2.Text.Trim().Equals("") && CheckName(TextBox2.Text.Trim()) == true && !TextBox3.Text.Trim().Equals("") && CheckUsername(TextBox3.Text.Trim()) == true && CheckExistency(TextBox3.Text.Trim()) == false && !TextBox4.Text.Trim().Equals("") && CheckPassword(TextBox4.Text.Trim()) == true && !TextBox1.Text.Trim().Equals("") && TextBox1.Text.Trim().Equals(TextBox4.Text.Trim()) && !TextBox6.Text.Trim().Equals("") && CheckPhone(TextBox6.Text.Trim()) == true && !TextBox7.Text.Trim().Equals("") && CheckEmail(TextBox7.Text.Trim()) == true && !TextBox8.Text.Trim().Equals(""))
@@ -195,24 +191,29 @@ namespace WebAssignment
 
                 con = new SqlConnection(strCon);
 
-                String query = "INSERT INTO ARTIST (Artist_Name, Artist_UserName, Artist_Password, Artist_Gender, Artist_Phone, Artist_Email, Artist_Address) " +
-                    "VALUES (@artistregistername,@artistregisterusername,@artistregisterpassword,@artistregistergender,@artistregisterphone,@artistregisteremail,@artistregisteraddress)";
+                String query = "INSERT INTO CUSTOMER (Customer_Name, Customer_UserName, Customer_Password, Customer_Gender, Customer_Phone, Customer_Email, Customer_Address) " +
+                    "VALUES (@custregistername,@custregisterusername,@custregisterpassword,@custregistergender,@custregisterphone,@custregisteremail,@custregisteraddress)";
 
                 SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@artistregistername", TextBox2.Text.Trim());
-                cmd.Parameters.AddWithValue("@artistregisterusername", TextBox3.Text.Trim());
-                cmd.Parameters.AddWithValue("@artistregisterpassword", TextBox4.Text.Trim());
-                cmd.Parameters.AddWithValue("@artistregistergender", DropDownList1.SelectedValue);
-                cmd.Parameters.AddWithValue("@artistregisterphone", TextBox6.Text.Trim());
-                cmd.Parameters.AddWithValue("@artistregisteremail", TextBox7.Text.Trim());
-                cmd.Parameters.AddWithValue("@artistregisteraddress", TextBox8.Text.Trim());
+                cmd.Parameters.AddWithValue("@custregistername", TextBox2.Text.Trim());
+                cmd.Parameters.AddWithValue("@custregisterusername", TextBox3.Text.Trim());
+                cmd.Parameters.AddWithValue("@custregisterpassword", TextBox4.Text.Trim());
+                cmd.Parameters.AddWithValue("@custregistergender", DropDownList1.SelectedValue);
+                cmd.Parameters.AddWithValue("@custregisterphone", TextBox6.Text.Trim());
+                cmd.Parameters.AddWithValue("@custregisteremail", TextBox7.Text.Trim());
+                cmd.Parameters.AddWithValue("@custregisteraddress", TextBox8.Text.Trim());
                 con.Open();
                 cmd.ExecuteNonQuery();
 
-                Session["ArtistRegisterName"] = TextBox2.Text.Trim();
+                Session["CustomerRegisterName"] = TextBox2.Text.Trim();
 
-                Response.Redirect("ArtistSuccess.aspx");
+                Response.Redirect("CustomerSuccess.aspx");
             }
+        }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CustomerLogin.aspx");
         }
 
         //done
