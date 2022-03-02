@@ -9,10 +9,10 @@
 }
 
         .buttondesign {
-            background-color: #fff;
+            background-color: transparent;
             border: none;
             border-radius: 75px;
-            margin: 100px 100px;
+            margin: 60px 100px;
             text-align: center;
             width: 450px;
             height: 450px;
@@ -41,7 +41,7 @@
             position: relative;
             display: inline-block;
             transition: 1s box-shadow;
-            transition: 2s ease;
+            transition: 1.5s ease;
         }
 
         .buttondesign2 {
@@ -63,13 +63,14 @@
             position: relative;
             display: inline-block;
             transition: 1s box-shadow;
-            transition: 2s ease;
+            transition: 1.5s ease;
         }
 
         .buttondesign1:hover{
             color: black;
             transition: 2s ease;
             background: white;
+
         }
 
         .buttondesign2:hover{
@@ -89,14 +90,14 @@
             position: absolute;
             width: 450px;
             height: 450px;
-            background: #FDA8CF;
+            background: #F3CE5E;
             border-radius: 75px;
             z-index: -1;
             animation: 1s clockwise infinite;
         }
 
         .buttondesign:hover:after {
-            background: #F3CE5E;
+            background: #FDA8CF;
             animation: 2s counterclockwise infinite;
         }
 

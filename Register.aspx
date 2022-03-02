@@ -8,10 +8,10 @@
         }
 
         .buttondesign {
-            background-color: #fff;
+            background-color: transparent;
             border: none;
             border-radius: 75px;
-            margin: 100px 100px;
+            margin: 60px 100px;
             text-align: center;
             width: 450px;
             height: 450px;
@@ -40,7 +40,7 @@
             position: relative;
             display: inline-block;
             transition: 1s box-shadow;
-            transition: 2s ease;
+            transition: 1.5s ease;
         }
 
         .buttondesign2 {
@@ -62,7 +62,7 @@
             position: relative;
             display: inline-block;
             transition: 1s box-shadow;
-            transition: 2s ease;
+            transition: 1.5s ease;
         }
 
         .buttondesign1:hover{
