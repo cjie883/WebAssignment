@@ -234,16 +234,16 @@
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <div class="pagelink">
                   <p>
-                    <a href="home.aspx">Home</a>
+                    <a href="Home.aspx">Home</a>
                 </p>
                 <p>
                   <a href="art.aspx">Product</a>
                 </p>
                 <p>
-                  <a href="about_us.aspx">About Us</a>
+                  <a href="About.aspx">About Us</a>
                 </p>
                 <p>
-                  <a href="help.aspx">FAQ</a>
+                  <a href="Help.aspx">FAQ</a>
                 </p>
                  </div>
               </div>

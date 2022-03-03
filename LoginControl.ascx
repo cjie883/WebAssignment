@@ -15,7 +15,7 @@ if(Session["CustomerID"] != null || Session["ArtistID"] != null)
         <br />
         <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Names="Algerian" Font-Size="XX-Large" ForeColor="White" style="padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px">User, you already login</asp:Label>
         <br />
-        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/home.aspx" style="font-family:Arial Rounded MT Bold"><p style="color: black;"> <i class="fas fa-home" style="color: black;"></i> Click me back to Home page</p></asp:LinkButton>
+        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Home.aspx" style="font-family:Arial Rounded MT Bold"><p style="color: black;"> <i class="fas fa-home" style="color: black;"></i> Click me back to Home page</p></asp:LinkButton>
     </center>
 <% } 
 else 
