@@ -38,11 +38,11 @@ namespace WebAssignment
         {
             if (Session["CustomerUsername"] != null && Session["CustomerID"] != null)
             {
-                Response.Redirect("CustomerViewProfile.aspx");
+                Response.Redirect("CustomerProfile.aspx");
             }
             else
             {
-                Response.Redirect("ArtistViewProfile.aspx");
+                Response.Redirect("ArtistProfile.aspx");
             }
 
         }

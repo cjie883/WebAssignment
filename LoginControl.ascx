@@ -42,7 +42,7 @@ else
         <div class="forgot"><a href="Forgotpassword.aspx"> Forgot Your Password? </a></div>
         <asp:Label ID="Label5" runat="server" Visible="false" CssClass="accounterrorlabel"></asp:Label>
         <br />
-    <asp:Button ID="Login" runat="server" Text="Login In" OnClick="Login_Click" class="buttondesign"/>
+    <asp:Button ID="Login" runat="server" Text="Login" OnClick="Login_Click" class="buttondesign"/>
         <br /><br />
         <asp:Label ID="registerlabel" runat="server" CssClass="registerlbl" Text="Don't have an account? Sign Up now"></asp:Label>
         <br /><br />
