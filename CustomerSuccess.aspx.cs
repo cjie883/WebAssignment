@@ -29,19 +29,18 @@ namespace WebAssignment
                     Label2.Text = (dtrInfo.GetInt32(dtrInfo.GetOrdinal("Customer_Id"))).ToString();
                     Label4.Text = (dtrInfo.GetString(dtrInfo.GetOrdinal("Customer_Name"))).ToString();
                     Label6.Text = (dtrInfo.GetString(dtrInfo.GetOrdinal("Customer_Username"))).ToString();
-                    Label8.Text = (dtrInfo.GetString(dtrInfo.GetOrdinal("Customer_Password"))).ToString();
                     String gender = (dtrInfo.GetString(dtrInfo.GetOrdinal("Customer_Gender"))).ToString();
                     if (gender == "M" || gender == "m")
                     {
-                        Label10.Text = "Male";
+                        Label8.Text = "Male";
                     }
                     else if (gender == "F" || gender == "f")
                     {
-                        Label10.Text = "Female";
+                        Label8.Text = "Female";
                     }
-                    Label12.Text = (dtrInfo.GetString(dtrInfo.GetOrdinal("Customer_Phone"))).ToString();
-                    Label14.Text = (dtrInfo.GetString(dtrInfo.GetOrdinal("Customer_Email"))).ToString();
-                    Label16.Text = (dtrInfo.GetString(dtrInfo.GetOrdinal("Customer_Address"))).ToString();
+                    Label10.Text = (dtrInfo.GetString(dtrInfo.GetOrdinal("Customer_Phone"))).ToString();
+                    Label12.Text = (dtrInfo.GetString(dtrInfo.GetOrdinal("Customer_Email"))).ToString();
+                    Label14.Text = (dtrInfo.GetString(dtrInfo.GetOrdinal("Customer_Address"))).ToString();
                 }
             }
         }

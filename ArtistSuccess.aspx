@@ -27,11 +27,11 @@ if(Session["ArtistRegisterName"] == null)
 else 
 {
 %>
-    <label class="registersuccessword">Register Successfully As An Artist!</label>
+    <label class="registersuccessword">Hi, You Register Successfully As An Artist!</label>
     <center>
     <div class="box">
         <center>
-    <h2>Your Registration Info</h2></center>
+    <h2>Your Registration Details</h2></center>
     <br />
     <asp:Label ID="Label1" runat="server" Text="Your ID" CssClass="viewlabel"></asp:Label>
     <br />
@@ -45,25 +45,21 @@ else
     <br />
     <asp:Label ID="Label6" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
-    <asp:Label ID="Label7" runat="server" Text="Password" CssClass="viewlabel"></asp:Label>
+    <asp:Label ID="Label7" runat="server" Text="Gender" CssClass="viewlabel"></asp:Label>
     <br />
     <asp:Label ID="Label8" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
-    <asp:Label ID="Label9" runat="server" Text="Gender" CssClass="viewlabel"></asp:Label>
+    <asp:Label ID="Label9" runat="server" Text="Phone" CssClass="viewlabel"></asp:Label>
     <br />
     <asp:Label ID="Label10" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
-    <asp:Label ID="Label11" runat="server" Text="Phone" CssClass="viewlabel"></asp:Label>
+    <asp:Label ID="Label11" runat="server" Text="Email" CssClass="viewlabel"></asp:Label>
     <br />
     <asp:Label ID="Label12" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
-    <asp:Label ID="Label13" runat="server" Text="Email" CssClass="viewlabel"></asp:Label>
+    <asp:Label ID="Label13" runat="server" Text="Address" CssClass="viewlabel"></asp:Label>
     <br />
     <asp:Label ID="Label14" runat="server" CssClass="profilelabel"></asp:Label>
-    <br />
-    <asp:Label ID="Label15" runat="server" Text="Address" CssClass="viewlabel"></asp:Label>
-    <br />
-    <asp:Label ID="Label16" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
     <asp:Button ID="Button1" runat="server" OnClick="LinkButton1_Click" Cssclass="buttondesign" Text="Sign In" />
         </div>

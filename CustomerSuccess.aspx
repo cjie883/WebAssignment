@@ -5,10 +5,10 @@
     <link href="css/ViewProfile.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
     
-    <label class="registersuccessword">Register Successfully! Welcome to WSP Art Gallery!</label>
+    <label class="registersuccessword">Hi, You Register Successfully! Welcome to WSP Art Gallery!</label>
     <center>
     <div class="box">
-    <h2>Your Registration Info</h2>
+    <h2>Your Registration Details</h2>
     <br />
     <asp:Label ID="Label1" runat="server" Text="Your ID" CssClass="viewlabel"></asp:Label>
     <br />
@@ -22,25 +22,21 @@
     <br />
     <asp:Label ID="Label6" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
-    <asp:Label ID="Label7" runat="server" Text="Password" CssClass="viewlabel"></asp:Label>
+    <asp:Label ID="Label7" runat="server" Text="Gender" CssClass="viewlabel"></asp:Label>
     <br />
     <asp:Label ID="Label8" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
-    <asp:Label ID="Label9" runat="server" Text="Gender" CssClass="viewlabel"></asp:Label>
+    <asp:Label ID="Label9" runat="server" Text="Phone" CssClass="viewlabel"></asp:Label>
     <br />
     <asp:Label ID="Label10" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
-    <asp:Label ID="Label11" runat="server" Text="Phone" CssClass="viewlabel"></asp:Label>
+    <asp:Label ID="Label11" runat="server" Text="Email" CssClass="viewlabel"></asp:Label>
     <br />
     <asp:Label ID="Label12" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
-    <asp:Label ID="Label13" runat="server" Text="Email" CssClass="viewlabel"></asp:Label>
+    <asp:Label ID="Label13" runat="server" Text="Address" CssClass="viewlabel"></asp:Label>
     <br />
     <asp:Label ID="Label14" runat="server" CssClass="profilelabel"></asp:Label>
-    <br />
-    <asp:Label ID="Label15" runat="server" Text="Address" CssClass="viewlabel"></asp:Label>
-    <br />
-    <asp:Label ID="Label16" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
     <asp:Button ID="Button1" runat="server" OnClick="LinkButton1_Click" Text="Sign In" CssClass="buttondesign" />
         </div>
