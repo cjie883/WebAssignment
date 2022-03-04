@@ -21,17 +21,16 @@
         <div class="text">
           <h2>Never Stop To </h2>
           <h3>Exploring The World</h3>
-          <p>We have got plenty of cool stuff in store for you right now,</p>
-          <p>and plenty more coming your way.</p>
+          <p>We've got a lot of cool art for you right now, </p>
+          <p>just waiting for you to bring them home.</p>
           <a href="art.aspx">Explore</a>  
           <a href="About.aspx">About Us</a>
-          <%--<a href="art.aspx" style="background: white;text-align: center;padding-left: 85px;"><img style="text-align: center;width:15%;" src="imgs/Artdist.png"></a>--%>
         </div>
     
         <ul class="social">
-          <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" style="margin-right:18px"></a></li>
+          <li><a href="https://www.facebook.com/dissy.official"><img src="https://i.ibb.co/x7P24fL/facebook.png" style="margin-right:18px"></a></li>
           <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-          <li><a href="https://www.instagram.com/yugi_0516/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+          <li><a href="https://www.instagram.com/dissy.official/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
         </ul> 
         
          

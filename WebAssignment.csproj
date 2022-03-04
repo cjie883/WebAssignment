@@ -83,6 +83,7 @@
     <Content Include="css\category.css" />
     <Content Include="css\Editproduct.css" />
     <Content Include="css\EditProfile.css" />
+    <Content Include="css\gallery.css" />
     <Content Include="css\help.css" />
     <Content Include="css\home.css" />
     <Content Include="css\login.css" />

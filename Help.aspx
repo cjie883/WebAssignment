@@ -15,8 +15,8 @@
 
     <div class="m-5">
     </div>
-    <h1>Frequently-asked Questions</h1>
-    <div class="accordion-wrapper">
+    <h1 data-aos="fade-down">Frequently-asked Questions</h1>
+    <div class="accordion-wrapper"  data-aos="fade-up">
         <div class="accordion">
             <input type="radio" name="radio-a" id="check1" checked>
             <label class="accordion-label" for="check1">How to find our web application?</label>

@@ -10,7 +10,7 @@
         .buttondesign {
             background-color: transparent;
             border: none;
-            border-radius: 75px;
+            border-radius: 100px;
             margin: 60px 100px;
             text-align: center;
             width: 450px;
@@ -29,7 +29,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             border: none;
-            border-radius: 75px;
+            border-radius: 100px;
             text-align: center;
             text-decoration: none;
             font-size: 25px;
@@ -51,7 +51,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             border: none;
-            border-radius: 75px;
+            border-radius: 100px;
             text-align: center;
             text-decoration: none;
             font-size: 25px;
@@ -91,7 +91,7 @@
             width: 450px;
             height: 450px;
             background: #FDA8CF;
-            border-radius: 75px;
+            border-radius: 100px;
             z-index: -1;
             animation: 1s clockwise infinite;
         }
@@ -196,11 +196,11 @@
         }
 
     </style>
+
     <div class="center">
         <center>
            
             <div class="buttondesign">
-
             <asp:Button ID="Button1" runat="server" Text="Customer Registration" class="buttondesign1" OnClick="Button1_Click" />
             </div>
 

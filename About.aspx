@@ -85,31 +85,6 @@ We stock mostly funny art, both contemporary and old masters and pioneers works 
     </div>
   </div>
         
-        <div>
-            <h1 class="partner text-center" data-aos="fade-up">Our Products</h1>
-         <div class="wrapper" data-aos="fade-up" data-aos-duration="3000">
-          <div class="slider">
-            <div class="slide">
-                <img src="imgs/m1.jpg" />
-                <img src="imgs/l1.jpg" />
-                <img src="imgs/c1.jpg" />
-                <img src="imgs/c2.jpg" />
-                <img src="imgs/m2.jpg" />
-                <img src="imgs/l4.jpg" />
-                <img src="imgs/l3.jpg" />
-            </div>
-            <div class="slide">
-              <img src="imgs/c3.jpg" />
-              <img src="imgs/l4.jpg" />
-              <img src="imgs/m2.jpg" />
-              <img src="imgs/m3.jpg" />
-              <img src="imgs/c3.jpg" />
-              <img src="imgs/l2.jpg" />
-              <img src="imgs/c2.jpg" />
-            </div>
-          </div>
-      </div>
-        </div> 
         <footer>
 
     </footer>
