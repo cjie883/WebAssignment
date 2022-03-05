@@ -43,7 +43,8 @@ namespace WebAssignment
 
                         Label9.Text = Session["ArtistID"].ToString();
                         TextBox2.Text = Session["ArtistName"].ToString();
-                        TextBox3.Text = Session["ArtistUsername"].ToString();
+                        Label14.Text = Session["ArtistUsername"].ToString();
+                      
                         if (Session["ArtistGender"].ToString() == "M" || Session["ArtistGender"].ToString() == "m")
                         {
                             Label10.Text = "Male";
@@ -76,61 +77,7 @@ namespace WebAssignment
             {
                 Label12.Visible = false;
             }
-
-            if (TextBox3.Text.Trim().Equals(""))
-            {
-                Label13.Text = "Please enter your username<br/>";
-                Label13.Visible = true;
-                Label18.Visible = false;
-                Label19.Visible = false;
-                Label20.Visible = false;
-                Label21.Visible = false;
-                Label22.Visible = false;
-                Label23.Visible = false;
-                Label24.Visible = false;
-            }
-            else if (CheckUsername(TextBox3.Text.Trim()) == false)
-            {
-                Label13.Text = "===============*NOTICE*===============<br/>";
-                Label18.Text = "Username length must between 8 to 16<br/>";
-                Label19.Text = "Username must begins with a letter<br/>";
-                Label20.Text = "Username must contain at least 1 Uppercase Letter<br/>";
-                Label21.Text = "Username must contain at least 1 Lowercase Letter<br/>";
-                Label22.Text = "Username must contain at least 1 Letter<br/>";
-                Label23.Text = "Username must contain at least 1 Digit<br/>";
-                Label24.Text = "Blank space is not allow<br/>";
-                Label13.Visible = true;
-                Label18.Visible = true;
-                Label19.Visible = true;
-                Label20.Visible = true;
-                Label21.Visible = true;
-                Label22.Visible = true;
-                Label23.Visible = true;
-                Label24.Visible = true;
-            }
-            else if (CheckExistency(TextBox3.Text.Trim()) == true)
-            {
-                Label13.Text = "Username Existed.Please enter another username<br/>";
-                Label13.Visible = true;
-                Label18.Visible = false;
-                Label19.Visible = false;
-                Label20.Visible = false;
-                Label21.Visible = false;
-                Label22.Visible = false;
-                Label23.Visible = false;
-                Label24.Visible = false;
-            }
-            else
-            {
-                Label13.Visible = false;
-                Label18.Visible = false;
-                Label19.Visible = false;
-                Label20.Visible = false;
-                Label21.Visible = false;
-                Label22.Visible = false;
-                Label23.Visible = false;
-                Label24.Visible = false;
-            }
+    
 
             if (TextBox6.Text.Trim().Equals(""))
             {
@@ -172,7 +119,7 @@ namespace WebAssignment
                 Label17.Visible = false;
             }
 
-            if (!TextBox2.Text.Trim().Equals("") && CheckName(TextBox2.Text.Trim()) == true && !TextBox3.Text.Trim().Equals("") && CheckUsername(TextBox3.Text.Trim()) == true && CheckExistency(TextBox3.Text.Trim()) == false && !TextBox6.Text.Trim().Equals("") && CheckPhone(TextBox6.Text.Trim()) == true && !TextBox7.Text.Trim().Equals("") && CheckEmail(TextBox7.Text.Trim()) == true && !TextBox8.Text.Trim().Equals(""))
+            if (!TextBox2.Text.Trim().Equals("") && CheckName(TextBox2.Text.Trim()) == true && !TextBox6.Text.Trim().Equals("") && CheckPhone(TextBox6.Text.Trim()) == true && !TextBox7.Text.Trim().Equals("") && CheckEmail(TextBox7.Text.Trim()) == true && !TextBox8.Text.Trim().Equals(""))
             {
                 String artistgetid = Label9.Text.Trim();
                 int artistid = int.Parse(artistgetid);
@@ -181,11 +128,10 @@ namespace WebAssignment
 
                 con = new SqlConnection(strCon);
                 con.Open();
-                String query = "UPDATE [ARTIST] SET Artist_Name = @artistname, Artist_UserName = @artistusername, Artist_Phone = @artistphone, Artist_Email = @artistemail, Artist_Address = @artistaddress WHERE Artist_Id=@artistid";
+                String query = "UPDATE [ARTIST] SET Artist_Name = @artistname, Artist_Phone = @artistphone, Artist_Email = @artistemail, Artist_Address = @artistaddress WHERE Artist_Id=@artistid";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@artistid", artistid);
                 cmd.Parameters.AddWithValue("@artistname", TextBox2.Text.Trim());
-                cmd.Parameters.AddWithValue("@artistusername", TextBox3.Text.Trim());
                 cmd.Parameters.AddWithValue("@artistphone", TextBox6.Text.Trim());
                 cmd.Parameters.AddWithValue("@artistemail", TextBox7.Text.Trim());
                 cmd.Parameters.AddWithValue("@artistaddress", TextBox8.Text.Trim());

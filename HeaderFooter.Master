@@ -135,18 +135,12 @@
                         </li>
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Login</asp:LinkButton>
-                        </li>
-                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton4" Visible="false" runat="server">Hello user :</asp:LinkButton>
-                        </li>
+                        </li>             
                         <li class="nav-item active">
                            <b><Login:UsernameTag ID="usernametag" runat="server"/></b>
                         </li>
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click"></asp:LinkButton>
-                        </li>
-                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server" OnClick="LinkButton7_Click"></asp:LinkButton>
                         </li>
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton9" runat="server" OnClick="LinkButton9_Click"></asp:LinkButton>

@@ -21,7 +21,7 @@ if(Session["CustomerID"] == null || Session["ArtistID"] != null)
         <br />
         <asp:Label ID="Label22" runat="server" Font-Bold="True" Font-Names="Algerian" Font-Size="XX-Large" ForeColor="Black" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"> ERROR 404</asp:Label>
         <br />
-        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Home.aspx" style="font-family:Arial Rounded MT Bold"><p style="color: black;"> <i class="fas fa-home" style="color: black;"></i> Click me back to Home page</p></asp:LinkButton>
+        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/home.aspx" style="font-family:Arial Rounded MT Bold"><p style="color: black;"> <i class="fas fa-home" style="color: black;"></i> Click me back to Home page</p></asp:LinkButton>
     </center>
 <% } 
 else 
@@ -43,16 +43,9 @@ else
     <br />
     <asp:Label ID="Label3" runat="server" Text="Username" CssClass="viewlabel"></asp:Label>
         <br />
-    <asp:TextBox ID="TextBox3" runat="server" CssClass="profilelabel"></asp:TextBox>
-        <asp:Label ID="Label14" runat="server" Text="Label" Visible="false" CssClass="errorlabel"></asp:Label>
-        <asp:Label ID="Label15" runat="server" Text="Label" Visible="false" CssClass="errorlabel"></asp:Label>
-        <asp:Label ID="Label16" runat="server" Text="Label" Visible="false" CssClass="errorlabel"></asp:Label>
-        <asp:Label ID="Label17" runat="server" Text="Label" Visible="false" CssClass="errorlabel"></asp:Label>
-        <asp:Label ID="Label18" runat="server" Text="Label" Visible="false" CssClass="errorlabel"></asp:Label>
-        <asp:Label ID="Label19" runat="server" Text="Label" Visible="false" CssClass="errorlabel"></asp:Label>
-        <asp:Label ID="Label20" runat="server" Text="Label" Visible="false" CssClass="errorlabel"></asp:Label>
-        <asp:Label ID="Label21" runat="server" Text="Label" Visible="false" CssClass="errorlabel"></asp:Label>
+        <asp:Label ID="Label14" runat="server" CssClass="profilelabel"></asp:Label>
     <br />
+    
     <asp:Label ID="Label5" runat="server" Text="Gender" CssClass="viewlabel"></asp:Label>
         <br />
     <asp:Label ID="Label10" runat="server" CssClass="profilelabel"></asp:Label>

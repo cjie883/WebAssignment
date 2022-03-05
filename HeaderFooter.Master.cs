@@ -13,11 +13,8 @@ namespace WebAssignment
         {
             if (Session["CustomerUsername"] != null && Session["CustomerID"] != null || Session["ArtistUsername"] != null && Session["ArtistID"] != null)
             {
-
-                LinkButton4.Visible = true;
                 LinkButton1.Visible = false;
-                LinkButton5.Text = "View Profile";
-                LinkButton7.Text = "Edit Profile";
+                LinkButton5.Text = "View Profile"; 
                 LinkButton9.Text = "Logout";
                 LinkButton2.Visible = false;
 
@@ -45,18 +42,6 @@ namespace WebAssignment
                 Response.Redirect("ArtistProfile.aspx");
             }
 
-        }
-
-        protected void LinkButton7_Click(object sender, EventArgs e)
-        {
-            if (Session["CustomerUsername"] != null && Session["CustomerID"] != null)
-            {
-                Response.Redirect("CustomerProfileEdit.aspx");
-            }
-            else
-            {
-                Response.Redirect("ArtistProfileEdit.aspx");
-            }
         }
 
         protected void LinkButton9_Click(object sender, EventArgs e)

@@ -43,7 +43,8 @@ namespace WebAssignment
 
                         Label9.Text = Session["CustomerID"].ToString();
                         TextBox2.Text = Session["CustomerName"].ToString();
-                        TextBox3.Text = Session["CustomerUsername"].ToString();
+                        Label14.Text = Session["CustomerUsername"].ToString();
+                   
                         if (Session["CustomerGender"].ToString() == "M" || Session["CustomerGender"].ToString() == "m")
                         {
                             Label10.Text = "Male";
@@ -77,60 +78,7 @@ namespace WebAssignment
                 Label4.Visible = false;
             }
 
-            if (TextBox3.Text.Trim().Equals(""))
-            {
-                Label14.Text = "Please enter your username<br/>";
-                Label14.Visible = true;
-                Label15.Visible = false;
-                Label16.Visible = false;
-                Label17.Visible = false;
-                Label18.Visible = false;
-                Label19.Visible = false;
-                Label20.Visible = false;
-                Label21.Visible = false;
-            }
-            else if (CheckUsername(TextBox3.Text.Trim()) == false)
-            {
-                Label14.Text = "===============*NOTICE*===============<br/>";
-                Label15.Text = "Username length must between 8 to 16<br/>";
-                Label16.Text = "Username must begins with a letter<br/>";
-                Label17.Text = "Username must contain at least 1 Uppercase Letter<br/>";
-                Label18.Text = "Username must contain at least 1 Lowercase Letter<br/>";
-                Label19.Text = "Username must contain at least 1 Letter<br/>";
-                Label20.Text = "Username must contain at least 1 Digit<br/>";
-                Label21.Text = "Blank space is not allow<br/>";
-                Label14.Visible = true;
-                Label15.Visible = true;
-                Label16.Visible = true;
-                Label17.Visible = true;
-                Label18.Visible = true;
-                Label19.Visible = true;
-                Label20.Visible = true;
-                Label21.Visible = true;
-            }
-            else if (CheckExistency(TextBox3.Text.Trim()) == true)
-            {
-                Label14.Text = "Username Existed.Please enter another username<br/>";
-                Label14.Visible = true;
-                Label15.Visible = false;
-                Label16.Visible = false;
-                Label17.Visible = false;
-                Label18.Visible = false;
-                Label19.Visible = false;
-                Label20.Visible = false;
-                Label21.Visible = false;
-            }
-            else
-            {
-                Label14.Visible = false;
-                Label15.Visible = false;
-                Label16.Visible = false;
-                Label17.Visible = false;
-                Label18.Visible = false;
-                Label19.Visible = false;
-                Label20.Visible = false;
-                Label21.Visible = false;
-            }
+            
 
             if (TextBox6.Text.Trim().Equals(""))
             {
@@ -173,7 +121,7 @@ namespace WebAssignment
             }
 
 
-            if (!TextBox2.Text.Trim().Equals("") && CheckName(TextBox2.Text.Trim()) == true && !TextBox3.Text.Trim().Equals("") && CheckUsername(TextBox3.Text.Trim()) == true && CheckExistency(TextBox3.Text.Trim()) == false && !TextBox6.Text.Trim().Equals("") && CheckPhone(TextBox6.Text.Trim()) == true && !TextBox7.Text.Trim().Equals("") && CheckEmail(TextBox7.Text.Trim()) == true && !TextBox8.Text.Trim().Equals(""))
+            if (!TextBox2.Text.Trim().Equals("") && CheckName(TextBox2.Text.Trim()) == true && !TextBox6.Text.Trim().Equals("") && CheckPhone(TextBox6.Text.Trim()) == true && !TextBox7.Text.Trim().Equals("") && CheckEmail(TextBox7.Text.Trim()) == true && !TextBox8.Text.Trim().Equals(""))
             {
                 String cusgetid = Label9.Text.Trim();
                 int cusid = int.Parse(cusgetid);
@@ -182,11 +130,10 @@ namespace WebAssignment
 
                 con = new SqlConnection(strCon);
                 con.Open();
-                String query = "UPDATE [CUSTOMER] SET Customer_Name = @custname, Customer_UserName = @custusername, Customer_Phone = @custphone, Customer_Email = @custemail, Customer_Address = @custaddress WHERE Customer_Id=@custid";
+                String query = "UPDATE [CUSTOMER] SET Customer_Name = @custname, Customer_Phone = @custphone, Customer_Email = @custemail, Customer_Address = @custaddress WHERE Customer_Id=@custid";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@custid", cusid);
-                cmd.Parameters.AddWithValue("@custname", TextBox2.Text.Trim());
-                cmd.Parameters.AddWithValue("@custusername", TextBox3.Text.Trim());
+                cmd.Parameters.AddWithValue("@custname", TextBox2.Text.Trim());  
                 cmd.Parameters.AddWithValue("@custphone", TextBox6.Text.Trim());
                 cmd.Parameters.AddWithValue("@custemail", TextBox7.Text.Trim());
                 cmd.Parameters.AddWithValue("@custaddress", TextBox8.Text.Trim());
