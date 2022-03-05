@@ -74,6 +74,7 @@
     </Content>
     <Content Include="ArtistLogin.aspx" />
     <Content Include="ArtistProfile.aspx" />
+    <Content Include="ArtistProfileEdit.aspx" />
     <Content Include="ArtistRegister.aspx" />
     <Content Include="ArtistSuccess.aspx" />
     <Content Include="css\aboutUs.css" />
@@ -93,6 +94,7 @@
     <Content Include="css\ViewProfile.css" />
     <Content Include="CustomerLogin.aspx" />
     <Content Include="CustomerProfile.aspx" />
+    <Content Include="CustomerProfileEdit.aspx" />
     <Content Include="CustomerRegister.aspx" />
     <Content Include="CustomerSuccess.aspx" />
     <Content Include="Gallery.aspx" />
@@ -195,6 +197,13 @@
     <Compile Include="ArtistProfile.aspx.designer.cs">
       <DependentUpon>ArtistProfile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ArtistProfileEdit.aspx.cs">
+      <DependentUpon>ArtistProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistProfileEdit.aspx.designer.cs">
+      <DependentUpon>ArtistProfileEdit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ArtistRegister.aspx.cs">
       <DependentUpon>ArtistRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,6 +231,13 @@
     </Compile>
     <Compile Include="CustomerProfile.aspx.designer.cs">
       <DependentUpon>CustomerProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerProfileEdit.aspx.cs">
+      <DependentUpon>CustomerProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerProfileEdit.aspx.designer.cs">
+      <DependentUpon>CustomerProfileEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="CustomerRegister.aspx.cs">
       <DependentUpon>CustomerRegister.aspx</DependentUpon>

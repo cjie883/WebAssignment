@@ -57,7 +57,7 @@ namespace WebAssignment
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ArtistEditProfile.aspx");
+            Response.Redirect("ArtistProfileEdit.aspx");
         }
 
         protected void LinkButton2_Click(object sender, EventArgs e)

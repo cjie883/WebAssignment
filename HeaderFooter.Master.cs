@@ -51,11 +51,11 @@ namespace WebAssignment
         {
             if (Session["CustomerUsername"] != null && Session["CustomerID"] != null)
             {
-                Response.Redirect("CustomerEditProfile.aspx");
+                Response.Redirect("CustomerProfileEdit.aspx");
             }
             else
             {
-                Response.Redirect("ArtistEditProfile.aspx");
+                Response.Redirect("ArtistProfileEdit.aspx");
             }
         }
 
