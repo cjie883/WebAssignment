@@ -63,7 +63,7 @@ namespace WebAssignment
 
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("maintain_product.aspx");
+            Response.Redirect("ArtistProduct.aspx");
         }
 
         protected void LinkButton13_Click(object sender, EventArgs e)

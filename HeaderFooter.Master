@@ -118,7 +118,7 @@
                             <a class="nav-link" href="Help.aspx">FAQ</a>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" Visible="False" OnClick="LinkButton3_Click">My Artwork</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" Visible="False" OnClick="LinkButton3_Click">My ArtWork</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton10" runat="server" Visible="False" OnClick="LinkButton10_Click">Wish List</asp:LinkButton>
@@ -145,6 +145,7 @@
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton9" runat="server" OnClick="LinkButton9_Click"></asp:LinkButton>
                         </li>
+                        </ul>
                 </div>
             </nav>
         </div>
