@@ -36,14 +36,17 @@ else
 {
 %>
     <center>
+
     <div class="box">
+                <center>
+    <h1>Edit Product</h1></center>
     <asp:ImageButton ID="Button1" runat="server" class="unciorn mx-auto d-block" width="300" height="300" style="margin-top:25px; border:2px solid #000;"/>
     <br />
-    <br />
+  
     <b><asp:Label ID="Label2" runat="server" Text="Art Name" CssClass="editinput"></asp:Label></b>
     <br />
     <asp:TextBox ID="TextBox2" runat="server" CssClass="inputtextbox" style ="text-transform: uppercase;"></asp:TextBox>
-    <br />
+ 
     <asp:RequiredFieldValidator ID="reqName" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please enter the art name" ForeColor="Red" ></asp:RequiredFieldValidator>
     <br />
     <asp:RegularExpressionValidator ID="regName" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please enter an art name without symblos and numbers" ForeColor="Red" ValidationExpression="^(?![\s.]+$)[a-zA-Z\s.]*$"></asp:RegularExpressionValidator>
@@ -84,8 +87,9 @@ else
     <br />
         <asp:Button ID="Button2" runat="server" OnClick="LinkButton1_Click" Text="Confirm Edit" CssClass="buttondesign"/>
         <br />
-        <br />
-        <a href="ArtistProduct.aspx"><p style="color: black; font-weight: bold; font-size: 20px;">Cancel  <i class="fas fa-window-close" style="color: black"></i> </p></a>
+        <%--<asp:Button ID="Button3" runat="server" Text="Cancel Edit" OnClick="LinkButton3_Click" CssClass="buttondesign"/>
+        <br />--%>
+        <button Class="buttondesign"><a href="ArtistProduct.aspx" style="color:white; text-decoration:none;">Cancel Edit</a></button>
     <br />
     </div>
     </center>

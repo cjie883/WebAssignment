@@ -43,6 +43,7 @@ namespace WebAssignment
             }
         }
 
+
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             int artid = int.Parse(Session["Art_Edit_ID"].ToString());
@@ -92,5 +93,10 @@ namespace WebAssignment
             }
 
         }
+
+        //protected void LinkButton3_Click(object sender, EventArgs e)
+        //{
+        //    Response.Redirect("ArtistProduct.aspx");
+        //}
     }
 }
