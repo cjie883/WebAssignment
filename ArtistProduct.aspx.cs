@@ -60,7 +60,6 @@ namespace WebAssignment
             cmdDelete.ExecuteNonQuery();
             con.Close();
 
-
             Response.Redirect("ArtistProduct.aspx");
         }
 
