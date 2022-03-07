@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/HeaderFooter.Master" CodeBehind="Product.aspx.cs" Inherits="WebAssignment.Product" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/HeaderFooter.Master" CodeBehind="ProductSub.aspx.cs" Inherits="WebAssignment.ProductSub" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -68,13 +68,27 @@ else
         <img src="imgs/painting.gif" width="200" height="150" name="productimage" alt="">
         <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/ProductCategory.aspx" Font-Bold="True" Font-Names="Broadway" Font-Size="XX-Large" Font-Underline="False"><p  style="color: black"><i class="far fa-plus-square" style="color: black"></i> Category</p></asp:LinkButton>
     </div>
-    <div style="position: absolute;left: 20%;top: 287px;display: block;margin-left: auto;margin-right: auto;">
+
+    <div style="position: absolute;left: 20%;top: 297px;display: block;margin-left: auto;margin-right: auto;">
+        <img src="imgs/paintPlate.gif" width="180" height="140" name="productimage" alt="">
+        <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Product.aspx"  Font-Bold="True" Font-Names="Broadway" Font-Size="XX-Large" Font-Underline="False"><p style="color: black;"> <i class="fas fa-paint-brush" style="color: black"></i>    All Art</p></asp:LinkButton>
+    </div>
+
+    <div style="position: absolute;left: 37%;top: 287px;display: block;margin-left: auto;margin-right: auto;">
         <img src="imgs/searchHeader.gif" width="200" height="150" name="productimage" alt="">
         <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/ProductSearch.aspx"  Font-Bold="True" Font-Names="Broadway" Font-Size="XX-Large" Font-Underline="False"><p style="color: black;"> <i class="fa fa-search" style="color: black"></i>    Search Art</p></asp:LinkButton>
     </div>
-    <center style="color:aqua;font-family:Arial;">
-        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" Font-Names="Bahnschrift Condensed" Font-Overline="False" Font-Size="XX-Large" Font-Strikeout="False" Font-Underline="True" ForeColor="#00CCFF">ALL ART</asp:Label>
+    <center>
+        <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="False" Font-Names="Bahnschrift Condensed" Font-Overline="False" Font-Size="XX-Large" Font-Strikeout="False" Font-Underline="True" ForeColor="#00CCFF"><%: Session["Category"] %></asp:Label>
     </center>
+
+<%--    <!-- if empty -->
+    <center>
+        <asp:Label ID="Label4" runat="server" Visible="False"></asp:Label>
+        <asp:Image ID="Image1" runat="server" Visible="False" style="width:200px;height:150px;"  ImageUrl="~/imgs/notFound.gif"/>
+        <br />
+        <asp:Label ID="Label1" runat="server" Visible="False" Font-Bold="True" Font-Names="Algerian" Font-Size="XX-Large" ForeColor="Black" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"></asp:Label>
+    </center>--%>
     <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" class="col-md-4 mb-5" RepeatColumns="3" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Center" RepeatDirection="Horizontal" CssClass="auto-style3">
 
         <ItemTemplate >
@@ -97,7 +111,11 @@ else
         </ItemTemplate>
 
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Artdist %>" SelectCommand="SELECT [Art_Image], [Art_Name], [Art_Price], [Art_Id] FROM [ART]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Artdist %>" SelectCommand="SELECT [Art_Image], [Art_Name], [Art_Price], [Art_Id] FROM [ART] WHERE ([Art_Category] = @Art_Category)">
+        <SelectParameters>
+            <asp:SessionParameter Name="Art_Category" SessionField="Category" Type="String" />
+        </SelectParameters>
+    </asp:SqlDataSource>
 
     
         

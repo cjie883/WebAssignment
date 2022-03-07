@@ -58,7 +58,7 @@ namespace WebAssignment
 
         protected void LinkButton14_Click(object sender, EventArgs e)
         {
-            Response.Redirect("art.aspx");
+            Response.Redirect("Product.aspx");
         }
 
         protected void LinkButton3_Click(object sender, EventArgs e)
@@ -83,7 +83,7 @@ namespace WebAssignment
 
         protected void LinkButton15_Click(object sender, EventArgs e)
         {
-            Response.Redirect("category.aspx");
+            Response.Redirect("ProductCategory.aspx");
         }
     }
 }

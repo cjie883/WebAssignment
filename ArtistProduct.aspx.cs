@@ -24,7 +24,7 @@ namespace WebAssignment
             string Art_Id = lnkRowSelection.CommandArgument.ToString();
 
             // pass Recipe idto another page via query string
-            Response.Redirect(string.Format("art_details.aspx?Art_Id={0}", Art_Id), false);
+            Response.Redirect(string.Format("ProductDetails.aspx?Art_Id={0}", Art_Id), false);
         }
 
         protected void BtnSubmit_Edit(object sender, EventArgs e)

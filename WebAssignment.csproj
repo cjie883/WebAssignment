@@ -15,7 +15,7 @@
     <AssemblyName>WebAssignment</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>true</Use64BitIISExpress>
     <IISExpressSSLPort>44340</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -172,6 +172,10 @@
     <Content Include="LoginControl.ascx" />
     <Content Include="Product.aspx" />
     <Content Include="ProductAdd.aspx" />
+    <Content Include="ProductCategory.aspx" />
+    <Content Include="ProductDetails.aspx" />
+    <Content Include="ProductSearch.aspx" />
+    <Content Include="ProductSub.aspx" />
     <Content Include="ProductUpdate.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="UsernameControl.ascx" />
@@ -319,6 +323,34 @@
     </Compile>
     <Compile Include="ProductAdd.aspx.designer.cs">
       <DependentUpon>ProductAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategory.aspx.cs">
+      <DependentUpon>ProductCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductCategory.aspx.designer.cs">
+      <DependentUpon>ProductCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSearch.aspx.cs">
+      <DependentUpon>ProductSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSearch.aspx.designer.cs">
+      <DependentUpon>ProductSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSub.aspx.cs">
+      <DependentUpon>ProductSub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductSub.aspx.designer.cs">
+      <DependentUpon>ProductSub.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductUpdate.aspx.cs">
       <DependentUpon>ProductUpdate.aspx</DependentUpon>
