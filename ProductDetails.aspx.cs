@@ -203,7 +203,7 @@ namespace WebAssignment
         protected void BtnSubmit_Artist(object sender, EventArgs e)
         {
 
-            Response.Redirect("view_artist.aspx");
+            Response.Redirect("ArtistList.aspx");
         }
 
         protected void BtnSubmit_Purchase(object sender, EventArgs e)

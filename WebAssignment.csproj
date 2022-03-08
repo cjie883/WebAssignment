@@ -72,6 +72,7 @@
     <Content Include="App_Data\Artdist_log.ldf">
       <DependentUpon>Artdist.mdf</DependentUpon>
     </Content>
+    <Content Include="ArtistList.aspx" />
     <Content Include="ArtistLogin.aspx" />
     <Content Include="ArtistProduct.aspx" />
     <Content Include="ArtistProfile.aspx" />
@@ -178,6 +179,7 @@
     <Content Include="ProductSub.aspx" />
     <Content Include="ProductUpdate.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="UpdatePassword.aspx" />
     <Content Include="UsernameControl.ascx" />
     <Content Include="video\home.mp4" />
     <Content Include="video\home4.mp4" />
@@ -190,6 +192,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistList.aspx.cs">
+      <DependentUpon>ArtistList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistList.aspx.designer.cs">
+      <DependentUpon>ArtistList.aspx</DependentUpon>
     </Compile>
     <Compile Include="ArtistLogin.aspx.cs">
       <DependentUpon>ArtistLogin.aspx</DependentUpon>
@@ -366,6 +375,13 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePassword.aspx.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdatePassword.aspx.designer.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="UsernameControl.ascx.cs">
       <DependentUpon>UsernameControl.ascx</DependentUpon>
