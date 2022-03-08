@@ -10,28 +10,35 @@
         <link href="css/category.css" rel="stylesheet">
             <style>
 
+        table {
+            border-collapse: separate !important;
+            border-spacing: 60px 0 !important;
+        }
+
         #myBtn {
-          display: none;
-          position: fixed;
-          bottom: 20px;
-          right: 30px;
-          z-index: 99;
-          font-size: 18px;
-          border: none;
-          outline: none;
-          background-color: red;
-          color: white;
-          cursor: pointer;
-          padding: 15px;
-          border-radius: 4px;
+         display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #C45AEC;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 30px;
+            width: 55px;
         }
 
         #myBtn:hover {
-          background-color: #555;
+           background-color: red;
         }
             .auto-style3 {
         left: 0px;
         top: 0px;
+        margin-bottom: 50px;
     }
         </style>
     <%--if no login cant see this page--%>
@@ -57,30 +64,17 @@ if(Session["CustomerID"] == null || Session["ArtistID"] != null)
 else 
 {
 %>
-        <header>
-        <div class="bg-image"></div>
-        <div class="bg-text">      
-            <img style="width:20%" src="imgs/WSP_New1.png" alt="cd">
-            <p>Come and explore more interesting ART</p>
+    <header>
+        <div class="hero-image">
+            <div class="hero-text">
+                <asp:Label ID="Label2" runat="server" class="toptitle"><%: Session["Category"] %></asp:Label><br />
+                <div style="height: 50px;"></div>
+                <asp:LinkButton ID="LinkButton3" runat="server" class="buttondesign-add" PostBackUrl="~/ProductCategory.aspx"><i class="far fa-plus-square" style="color: white"></i> Category</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton2" runat="server" class="buttondesign-add" PostBackUrl="~/Product.aspx"><i class="fas fa-paint-brush" style="color: white"></i>    All Art</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" class="buttondesign-add" PostBackUrl="~/ProductSearch.aspx"><i class="fa fa-search" style="color: white"></i>    Search Art</asp:LinkButton>
+            </div>
         </div>
     </header>
-    <div style="position: absolute;left: 1%;top: 287px;display: block;margin-left: auto;margin-right: auto;">
-        <img src="imgs/painting.gif" width="200" height="150" name="productimage" alt="">
-        <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/ProductCategory.aspx" Font-Bold="True" Font-Names="Broadway" Font-Size="XX-Large" Font-Underline="False"><p  style="color: black"><i class="far fa-plus-square" style="color: black"></i> Category</p></asp:LinkButton>
-    </div>
-
-    <div style="position: absolute;left: 20%;top: 297px;display: block;margin-left: auto;margin-right: auto;">
-        <img src="imgs/paintPlate.gif" width="180" height="140" name="productimage" alt="">
-        <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Product.aspx"  Font-Bold="True" Font-Names="Broadway" Font-Size="XX-Large" Font-Underline="False"><p style="color: black;"> <i class="fas fa-paint-brush" style="color: black"></i>    All Art</p></asp:LinkButton>
-    </div>
-
-    <div style="position: absolute;left: 37%;top: 287px;display: block;margin-left: auto;margin-right: auto;">
-        <img src="imgs/searchHeader.gif" width="200" height="150" name="productimage" alt="">
-        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/ProductSearch.aspx"  Font-Bold="True" Font-Names="Broadway" Font-Size="XX-Large" Font-Underline="False"><p style="color: black;"> <i class="fa fa-search" style="color: black"></i>    Search Art</p></asp:LinkButton>
-    </div>
-    <center>
-        <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="False" Font-Names="Bahnschrift Condensed" Font-Overline="False" Font-Size="XX-Large" Font-Strikeout="False" Font-Underline="True" ForeColor="#00CCFF"><%: Session["Category"] %></asp:Label>
-    </center>
 
 <%--    <!-- if empty -->
     <center>
@@ -92,21 +86,19 @@ else
     <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" class="col-md-4 mb-5" RepeatColumns="3" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Center" RepeatDirection="Horizontal" CssClass="auto-style3">
 
         <ItemTemplate >
-            <!-- show product -->          
+          
 
-                <div class="shadow p-3 mb-5 bg-white rounded">
-            <!-- --> 
-                    <div class="Gundam"> 
+                <div class="artContainer">
 
                         <asp:ImageButton ID="Button1" runat="server" ImageUrl='<%# Eval("Art_Image") %>' CommandArgument='<%# Eval("Art_Id") %>' OnClick="Button1_Click" 
                             class="unciorn mx-auto d-block" width="200" height="200"/>
                         
-                    </div>
+                    
                     <div class="text-center pt-4">
                       <h5 name="productName"><%# Eval("Art_Name") %></h5>
                       <p><span class="mr-1" name="productPrice"><strong>RM <%# Eval("Art_Price") %></strong></span></p>
                     </div>
-            <!-- --> 
+
                 </div>
         </ItemTemplate>
 
@@ -119,7 +111,7 @@ else
 
     
         
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up" style="color: white"></i></button>
         <jsp:include page="headerfooter/UserFooter.jsp" />
         <script>
             //Get the button

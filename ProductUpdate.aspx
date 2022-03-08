@@ -85,11 +85,12 @@ else
     <br />
     <asp:RequiredFieldValidator ID="reqDesc" runat="server" ControlToValidate="TextBox6" ErrorMessage="Please enter the description" ForeColor="Red"></asp:RequiredFieldValidator>
     <br />
+        <asp:LinkButton ID="LinkButton3" runat="server" CssClass="buttondesign" PostBackUrl="~/ArtistProduct.aspx">Cancel Edit</asp:LinkButton>
         <asp:Button ID="Button2" runat="server" OnClick="LinkButton1_Click" Text="Confirm Edit" CssClass="buttondesign"/>
-        <br />
+        
         <%--<asp:Button ID="Button3" runat="server" Text="Cancel Edit" OnClick="LinkButton3_Click" CssClass="buttondesign"/>
         <br />--%>
-        <button Class="buttondesign"><a href="ArtistProduct.aspx" style="color:white; text-decoration:none;">Cancel Edit</a></button>
+        
     <br />
     </div>
     </center>

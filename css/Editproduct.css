@@ -57,11 +57,15 @@ h1 {
     padding: 12px 45px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-decoration: none;
     margin: 20px;
 }
 
     .buttondesign:hover {
         background-color: red;
         border: 1px solid red;
+        text-decoration: none;
+        color: white;
     }
+
 

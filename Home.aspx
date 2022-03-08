@@ -19,8 +19,8 @@
         <div class="overlay"></div>
         <video src="video/Comp.mp4" muted loop autoplay></video>
         <div class="text">
-          <h2>keep Explore World</h2>
-          <h3>With Beautiful Art</h3>
+          <h3>keep Explore World</h3>
+          <h4>With Beautiful Art</h4>
           <p>A lots of Cool and Beautiful Art Available Here </p>
           <p>Please take a look and Bring it Back Home Now</p>
           <a href="Product.aspx">Explore</a>  
