@@ -105,9 +105,9 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="Gallery.aspx">Gallery</a>
                         </li>
-                        <li class="nav-item active">
+                       <%-- <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton15" runat="server" Visible="False" OnClick="LinkButton15_Click">Category</asp:LinkButton>
-                        </li>
+                        </li>--%>
 <%--                        <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton14" runat="server" Visible="False" OnClick="LinkButton14_Click">Art</asp:LinkButton>
                         </li>--%>

@@ -173,7 +173,6 @@
     <Content Include="LoginControl.ascx" />
     <Content Include="Product.aspx" />
     <Content Include="ProductAdd.aspx" />
-    <Content Include="ProductCategory.aspx" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductSearch.aspx" />
     <Content Include="ProductSub.aspx" />
@@ -332,13 +331,6 @@
     </Compile>
     <Compile Include="ProductAdd.aspx.designer.cs">
       <DependentUpon>ProductAdd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ProductCategory.aspx.cs">
-      <DependentUpon>ProductCategory.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProductCategory.aspx.designer.cs">
-      <DependentUpon>ProductCategory.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>

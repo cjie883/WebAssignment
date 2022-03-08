@@ -23,7 +23,7 @@ namespace WebAssignment
                     LinkButton10.Visible = true;
                     LinkButton13.Visible = true;
                     //LinkButton14.Visible = true;
-                    LinkButton15.Visible = true;
+                    
                 }
                 else
                 {
@@ -81,9 +81,9 @@ namespace WebAssignment
             Response.Redirect("Login.aspx");
         }
 
-        protected void LinkButton15_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("ProductCategory.aspx");
-        }
+        //protected void LinkButton15_Click(object sender, EventArgs e)
+        //{
+        //    Response.Redirect("ProductCategory.aspx");
+        //}
     }
 }
