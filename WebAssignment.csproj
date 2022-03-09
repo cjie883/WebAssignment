@@ -79,6 +79,7 @@
     <Content Include="ArtistProfileEdit.aspx" />
     <Content Include="ArtistRegister.aspx" />
     <Content Include="ArtistSuccess.aspx" />
+    <Content Include="Cart.aspx" />
     <Content Include="css\aboutUs.css" />
     <Content Include="css\add.css" />
     <Content Include="css\animation.css" />
@@ -99,6 +100,7 @@
     <Content Include="CustomerProfileEdit.aspx" />
     <Content Include="CustomerRegister.aspx" />
     <Content Include="CustomerSuccess.aspx" />
+    <Content Include="ForgotPassword.aspx" />
     <Content Include="Gallery.aspx" />
     <Content Include="Help.aspx" />
     <Content Include="Home.aspx" />
@@ -183,6 +185,7 @@
     <Content Include="video\home.mp4" />
     <Content Include="video\home4.mp4" />
     <Content Include="Web.config" />
+    <Content Include="WishList.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -241,6 +244,13 @@
     <Compile Include="ArtistSuccess.aspx.designer.cs">
       <DependentUpon>ArtistSuccess.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CustomerLogin.aspx.cs">
       <DependentUpon>CustomerLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -275,6 +285,13 @@
     </Compile>
     <Compile Include="CustomerSuccess.aspx.designer.cs">
       <DependentUpon>CustomerSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Gallery.aspx.cs">
       <DependentUpon>Gallery.aspx</DependentUpon>
@@ -381,6 +398,13 @@
     </Compile>
     <Compile Include="UsernameControl.ascx.designer.cs">
       <DependentUpon>UsernameControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WishList.aspx.cs">
+      <DependentUpon>WishList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishList.aspx.designer.cs">
+      <DependentUpon>WishList.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

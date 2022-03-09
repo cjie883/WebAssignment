@@ -242,7 +242,7 @@ namespace WebAssignment
             con.Close();
 
             Response.Write("<script>alert('Art has been added into wish list')</script>");
-            Server.Transfer("wish_list.aspx");
+            Server.Transfer("WishList.aspx");
         }
     }
 }

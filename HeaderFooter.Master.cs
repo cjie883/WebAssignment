@@ -53,7 +53,7 @@ namespace WebAssignment
 
         protected void LinkButton10_Click(object sender, EventArgs e)
         {
-            Response.Redirect("wish_list.aspx");
+            Response.Redirect("WishList.aspx");
         }
 
         protected void LinkButton14_Click(object sender, EventArgs e)
