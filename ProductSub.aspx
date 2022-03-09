@@ -69,7 +69,7 @@ else
             <div class="hero-text">
                 <asp:Label ID="Label2" runat="server" class="toptitle"><%: Session["Category"] %></asp:Label><br />
                 <div style="height: 50px;"></div>
-                <asp:LinkButton ID="LinkButton3" runat="server" class="buttondesign-add" PostBackUrl="~/ProductCategory.aspx"><i class="far fa-plus-square" style="color: white"></i> Category</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton3" runat="server" class="buttondesign-add" PostBackUrl="~/Gallery.aspx"><i class="far fa-plus-square" style="color: white"></i> Category</asp:LinkButton>
                 <asp:LinkButton ID="LinkButton2" runat="server" class="buttondesign-add" PostBackUrl="~/Product.aspx"><i class="fas fa-paint-brush" style="color: white"></i>    All Art</asp:LinkButton>
                 <asp:LinkButton ID="LinkButton1" runat="server" class="buttondesign-add" PostBackUrl="~/ProductSearch.aspx"><i class="fa fa-search" style="color: white"></i>    Search Art</asp:LinkButton>
             </div>
