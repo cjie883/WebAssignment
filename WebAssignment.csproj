@@ -80,7 +80,6 @@
     <Content Include="ArtistRegister.aspx" />
     <Content Include="ArtistSuccess.aspx" />
     <Content Include="Cart.aspx" />
-    <Content Include="CartControl.ascx" />
     <Content Include="css\aboutUs.css" />
     <Content Include="css\add.css" />
     <Content Include="css\animation.css" />
@@ -251,12 +250,6 @@
     </Compile>
     <Compile Include="Cart.aspx.designer.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CartControl.ascx.cs">
-      <DependentUpon>CartControl.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="CartControl.ascx.designer.cs">
-      <DependentUpon>CartControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="CustomerLogin.aspx.cs">
       <DependentUpon>CustomerLogin.aspx</DependentUpon>

@@ -244,5 +244,32 @@ namespace WebAssignment
             Response.Write("<script>alert('Art has been added into wish list')</script>");
             Server.Transfer("WishList.aspx");
         }
+
+        protected void BtnSubmit_Cart(object sender, EventArgs e)
+        {
+            int id = int.Parse(Label1.Text);
+            int cus = int.Parse(Session["CustomerID"].ToString());//session after login
+
+            SqlConnection con;
+            string strCon = ConfigurationManager.ConnectionStrings["Artdist"].ConnectionString;
+
+            con = new SqlConnection(strCon);
+            con.Open();
+
+            string strInsert = "Insert Into NCART (Cart_Cus_Id, Cart_Art_Id, Cart_Art_Image) Values (@cus_id, @art_id, @art_image)";
+
+            SqlCommand cmdInsert = new SqlCommand(strInsert, con);
+
+            cmdInsert.Parameters.AddWithValue("@cus_id", cus);
+            cmdInsert.Parameters.AddWithValue("@art_id", id);
+            cmdInsert.Parameters.AddWithValue("@art_image", Session["Art_Image_Show"]);
+
+            cmdInsert.ExecuteNonQuery();
+
+            con.Close();
+
+            Response.Write("<script>alert('Art has been added into Cart')</script>");
+            Server.Transfer("Cart.aspx");
+        }
     }
 }

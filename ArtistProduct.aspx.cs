@@ -57,7 +57,7 @@ namespace WebAssignment
             cmdDelete.Parameters.AddWithValue("@artist_id", artist);
             cmdDelete.Parameters.AddWithValue("@remove_id", remove);
 
-            cmdDelete.ExecuteNonQuery();
+            //cmdDelete.ExecuteNonQuery();
             con.Close();
 
             Response.Redirect("ArtistProduct.aspx");
