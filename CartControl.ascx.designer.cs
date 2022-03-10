@@ -11,16 +11,7 @@ namespace WebAssignment
 {
 
 
-    public partial class Cart
+    public partial class CartControl
     {
-
-        /// <summary>
-        /// CartControl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::WebAssignment.CartControl CartControl;
     }
 }
