@@ -88,9 +88,7 @@
             margin: 30px 0px 0px 80px;
         }
 
-        .page {
-            margin: 0px;
-        }
+
 
 
     </style>
