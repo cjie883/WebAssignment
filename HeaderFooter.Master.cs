@@ -74,7 +74,7 @@ namespace WebAssignment
 
         protected void LinkButton13_Click(object sender, EventArgs e)
         {
-            Response.Redirect("PaymentHistory.aspx");
+            Response.Redirect("ProductSearch.aspx");
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)

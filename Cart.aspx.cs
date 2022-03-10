@@ -13,17 +13,27 @@ namespace WebAssignment
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             if (!IsPostBack)
             {
                 calculateTotal();
+                
             }
             if (DataList2.Items.Count == 0)
             {
                 Image1.Visible = true;
                 Label2.Visible = true;
                 Label4.Visible = true;
+
                 Label4.Text = "  <br /><br />";
                 Label2.Text = "  Cart is empty now  <br /><br /><br /><br /><br /><br /><br />";
+            }
+            if(DataList2.Items.Count > 0)
+            {
+                lbltext.Visible = true;
+                lbltext.Text = "Total Price (RM): ";
+                labelTotal.Visible = true;
+                lblbutton.Visible = true;
             }
         }
 
@@ -91,12 +101,14 @@ namespace WebAssignment
 
             if (dtrInfo.HasRows)// has record(s)
             {
+                
                 if (dtrInfo.Read())
                 {
                     Art_Price = Convert.ToDouble(dtrInfo["Art_Price"].ToString());
                 }
 
                 Session["Pay_Art_Price"] = Art_Price;
+                
                
 
             }

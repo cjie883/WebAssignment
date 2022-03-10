@@ -156,11 +156,11 @@ else
 
     &nbsp;&nbsp;&nbsp;
     <p class="auto-style1">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        Total Price: RM
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="lbltext" runat="server" Text=""></asp:Label>
         <asp:Label ID="labelTotal" runat="server" Text=""></asp:Label>
         &nbsp;&nbsp;
-        <asp:HyperLink ID="HyperLink1" runat="server">Proceed to Payment</asp:HyperLink>
+        <asp:Button ID="lblbutton" runat="server" Text="Proceed to Payment" />
         <br />
     </p>
 
