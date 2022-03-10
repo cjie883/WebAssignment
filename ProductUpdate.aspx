@@ -72,9 +72,9 @@ else
     <b><asp:Label ID="Label5" runat="server" Text="Category" CssClass="editinput"></asp:Label></b>
     <br />
     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="inputtextbox">
-        <asp:ListItem Value="Cartoon">Cartoon</asp:ListItem>
+        <asp:ListItem Value="Scenary">Scenary</asp:ListItem>
         <asp:ListItem Value="Abstract">Abstract</asp:ListItem>
-        <asp:ListItem Value="Lisa">Lisa</asp:ListItem>
+        <asp:ListItem Value="Portrait">Portrait</asp:ListItem>
     </asp:DropDownList>
     <br />
     <br />

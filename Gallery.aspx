@@ -22,6 +22,9 @@
         .item-5 {
             background-image: url("imgs/artist5.jfif");
         }
+        .auto-style1 {
+            margin-left: 70px;
+        }
     </style>
     <link href="css/gallery.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
@@ -33,12 +36,12 @@
             <p style="font-size: 18px; margin-bottom:35px;" data-aos="fade-down">You can choose your preferred artwork category below.</p><br />
             <div class="buttondesign" data-aos="flip-right">
             <div class="imageborder"><asp:ImageButton ID="ImageButton1" class="categoryimage" runat="server" ImageUrl="/imgs/c1.jpg" data-aos="flip-right" AlternateText="Cartoon" OnClick="ImageButton1_Click"/></div> 
-                <b><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"  class="designtitle" Font-underline="False">Cartoon</asp:LinkButton></b>
+                <b><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"  class="designtitle" Font-underline="False">Scenary</asp:LinkButton></b>
             </div>
            
             <div class="buttondesign" data-aos="flip-right">
             <div class="imageborder"><asp:ImageButton ID="ImageButton2" class="categoryimage" runat="server" ImageUrl="/imgs/l1.jpg" data-aos="flip-right" OnClick="ImageButton2_Click" /></div>
-                <b><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" class="designtitle" Font-underline="false">Lisa</asp:LinkButton></b>
+                <b><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" class="designtitle" Font-underline="false">Portrait</asp:LinkButton></b>
             </div>
               
             <div class="buttondesign" data-aos="flip-right">
@@ -53,7 +56,7 @@
     </div>
 
 <div class="accodionbg">
-    <center><h1 data-aos="fade-in"">Current Potential Artists</h1>
+    <center><h1 data-aos="fade-in"" class="auto-style1">Current Potential Artists</h1>
     <p style="font-size: 18px; margin-bottom:35px;" data-aos="fade-in">Most popular young female artist on instagram.</p><br /></center>
     <div class="containerbar">
 

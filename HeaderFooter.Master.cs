@@ -21,6 +21,7 @@ namespace WebAssignment
                 if (Session["CustomerID"] != null)
                 {
                     LinkButton10.Visible = true;
+                    LinkButton15.Visible = true;
                     LinkButton13.Visible = true;
                     //LinkButton14.Visible = true;
                     
@@ -54,6 +55,11 @@ namespace WebAssignment
         protected void LinkButton10_Click(object sender, EventArgs e)
         {
             Response.Redirect("WishList.aspx");
+        }
+
+        protected void LinkButton15_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Cart.aspx");
         }
 
         protected void LinkButton14_Click(object sender, EventArgs e)

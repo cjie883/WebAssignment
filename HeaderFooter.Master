@@ -124,6 +124,9 @@
                             <asp:LinkButton class="nav-link" ID="LinkButton10" runat="server" Visible="False" OnClick="LinkButton10_Click">Wish List</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton15" runat="server" Visible="False" OnClick="LinkButton15_Click">Cart</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton13" runat="server" Visible="False" OnClick="LinkButton13_Click">Payment History</asp:LinkButton>
                         </li>
                     </ul>

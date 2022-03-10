@@ -15,14 +15,14 @@ namespace WebAssignment
         }
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            string category = "cartoon";
+            string category = "scenary";
             Session["Category"] = category;
             Response.Redirect("ProductSub.aspx");
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-            string category = "lisa";
+            string category = "portrait";
             Session["Category"] = category;
             Response.Redirect("ProductSub.aspx");
         }
@@ -36,14 +36,14 @@ namespace WebAssignment
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            string category = "cartoon";
+            string category = "scenary";
             Session["Category"] = category;
             Response.Redirect("ProductSub.aspx");
         }
 
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
-            string category = "lisa";
+            string category = "portrait";
             Session["Category"] = category;
             Response.Redirect("ProductSub.aspx");
         }

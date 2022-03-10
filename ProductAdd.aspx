@@ -93,10 +93,10 @@
                     <br />
 
 
-                    <asp:DropDownList ID="DropDownList" runat="server" CssClass="inputtextbox">
-                        <asp:ListItem Value="cartoon">CARTOON</asp:ListItem>
+                    <asp:DropDownList ID="DropDownList" runat="server" CssClass="inputtextbox" OnSelectedIndexChanged="DropDownList_SelectedIndexChanged">
+                        <asp:ListItem Value="scenary">SCENARY</asp:ListItem>
                         <asp:ListItem Value="abstract">ABSTRACT</asp:ListItem>
-                        <asp:ListItem Value="lisa">LISA</asp:ListItem>
+                        <asp:ListItem Value="portrait">PORTRAIT</asp:ListItem>
                     </asp:DropDownList>
                     <br />
                     <br />
