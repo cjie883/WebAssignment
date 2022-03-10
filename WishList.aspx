@@ -119,11 +119,12 @@ else
 %>
 
     <header>
-        <div class="bg-image"></div>
+        <div class="bg-image">
         <div class="bg-text">      
           
             <h1 class="glow">My Wish List</h1>
         </div>
+            </div>
     </header>
 
     <!-- if empty -->

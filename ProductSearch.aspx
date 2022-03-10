@@ -166,7 +166,7 @@ else
 %>
     <div>
         <center>
-            <div class="bg-image"></div>
+            <div class="bg-image">
             <div class="bg-text">
                 <h1 class="glow">Search ART</h1>        
                 <br />
@@ -177,6 +177,7 @@ else
                 <div style="height: 50px;"></div>
                 <asp:LinkButton ID="LinkButton3" runat="server" CssClass="buttondesign-back" PostBackUrl="~/Product.aspx"><i class="fa fa-arrow-left" style="color: white;"></i>    Back to Art page</asp:LinkButton>
             </div>
+                </div>
 
          </center>
 

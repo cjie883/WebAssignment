@@ -85,9 +85,33 @@
         }
 
 
-        .auto-style1 {
-            margin-left: 480px;
-        }
+
+
+        .buttondesign {
+    border-radius: 20px;
+    border: 1px solid #C45AEC;
+    background-color: #C45AEC;
+    color: #FFFFFF !important;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 20px;
+    text-decoration: none !important;
+}
+
+    .buttondesign:hover {
+        background-color: red;
+        border: 1px solid red;
+    }
+
+    .label1{
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+            
+    }
 
 
     </style>
@@ -116,11 +140,12 @@ else
 %>
 
     <header>
-        <div class="bg-image"></div>
+        <div class="bg-image">
         <div class="bg-text">      
           
             <h1 class="glow">My Cart</h1>
         </div>
+            </div>
     </header>
 
     <!-- if empty -->
@@ -154,13 +179,11 @@ else
 
     </asp:DataList>
 
-    &nbsp;&nbsp;&nbsp;
     <p class="auto-style1">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label ID="lbltext" runat="server" Text=""></asp:Label>
-        <asp:Label ID="labelTotal" runat="server" Text=""></asp:Label>
-        &nbsp;&nbsp;
-        <asp:Button ID="lblbutton" runat="server" Text="Proceed to Payment" />
+       <br />
+        <center><asp:Label ID="lbltext" runat="server" CssClass="label1" Text=""></asp:Label>
+        <asp:Label ID="labelTotal" runat="server" CssClass="label1" Text=""></asp:Label><br />
+        <asp:Button ID="lblbutton" class="buttondesign" runat="server" Text="Proceed to Payment" /></center>
         <br />
     </p>
 
