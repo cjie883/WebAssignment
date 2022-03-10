@@ -8,103 +8,91 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link href="css/category.css" rel="stylesheet">
     <style>
-                .auto-style1 {
+        .auto-style1 {
             height: 356px;
         }
-        .auto-style2 {
-            margin-right: 115px;
+
+
+        table {
+            border-collapse: separate !important;
+            border-spacing: 60px 0 !important;
         }
+
         .glow {
-  font-size: 50px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
- #myBtn {
-          display: none;
-          position: fixed;
-          bottom: 20px;
-          right: 30px;
-          z-index: 99;
-          font-size: 18px;
-          border: none;
-          outline: none;
-          background-color: red;
-          color: white;
-          cursor: pointer;
-          padding: 15px;
-          border-radius: 4px;
+            font-size: 38px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
         }
 
-        #myBtn:hover {
-          background-color: #555;
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #C45AEC;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 30px;
+            width: 55px;
         }
-            .auto-style2 {
-                display: flex;
-                -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-                width: 1645px;
-                margin-left: -15px;
-                margin-right: -15px;
+
+            #myBtn:hover {
+                background-color: red;
             }
-            body, html {
-  height: 100%;
-}
 
-* {
-  box-sizing: border-box;
-}
+        .auto-style2 {
+            left: 0px;
+        top: 0px;
+        margin-bottom: 50px;
+        }
 
-.bg-image {
-  /* The image used */
-  background-image: url("imgs/category_background.jpg");
+        body, html {
+            height: 100%;
+        }
 
-  /* Full height */
-  height: 280px;
+        * {
+            box-sizing: border-box;
+        }
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+        .bg-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/artistbg.jpg");
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            margin-bottom: 50px;
+        }
 
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  font-size: 25px;
-  border: 6px solid #f1f1f1;
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
+        /* Position text in the middle of the page/image */
+        .bg-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            width: 800px;
+        }
 
-.unciorn{
-    margin: 30px 0px 0px 80px;
-}
+        .unciorn {
+            margin: 30px 0px 0px 80px;
+        }
 
-.page{
-    margin:0px;
-}
+        .page {
+            margin: 0px;
+        }
+
+
     </style>
     <%--if no login cant see this page--%>
 <%
@@ -129,13 +117,11 @@ if(Session["CustomerID"] == null || Session["ArtistID"] != null)
 else 
 {
 %>
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div>
+
     <header>
         <div class="bg-image"></div>
         <div class="bg-text">      
-            <img style="width:20%" src="imgs/WSP_New1.png" alt="cd">
+          
             <h1 class="glow">My Wish List</h1>
         </div>
     </header>
@@ -145,36 +131,31 @@ else
         <asp:Label ID="Label4" runat="server" Visible="False"></asp:Label>
         <asp:Image ID="Image1" runat="server" Visible="False" style="width:200px;height:150px;"  ImageUrl="~/imgs/notFound.gif"/>
         <br />
-        <asp:Label ID="Label2" runat="server" Visible="False" Font-Bold="True" Font-Names="Algerian" Font-Size="XX-Large" ForeColor="Black" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Visible="False" Font-Bold="True" Font-Names="'Montserrat', sans-serif" Font-Size="XX-Large" ForeColor="Black" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"></asp:Label>
     </center>
 
-    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" DataKeyField="Wish_Number" CssClass="auto-style2" RepeatColumns="2" RepeatDirection="Horizontal" >
+    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" DataKeyField="Wish_Number" class="col-md-4 mb-5" CssClass="auto-style2" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Center" RepeatDirection="Horizontal">
+        
         <ItemTemplate>
-            <div style="padding:30px;padding-left:120px;text-align:center;">
-            <img src="<%# Eval("Wish_Art_Image") %>" width="500" style="border: 10px solid lightcyan;" name="productimage" alt="" class="auto-style1">
-<%--            <asp:Image ID="Image1" runat="server" Height="177px" ImageUrl='<%: Session["Art_Image_Show"] %>>' Width="303px" />--%>
+            <div class="Wishlist">
+               
+            <img src="<%# Eval("Wish_Art_Image") %>"  name="productimage" alt=""  class="unciorn mx-auto d-block" width="200" height="200">
             <br />
-            <div style="background-color:lightcyan">
-                <h3 class="product-title" name="productname" style="font-family:fantasy;text-align:center;"><asp:Label ID="Label1" runat="server" Text='<%# Eval("Art_Name") %>'/></h3>
-                <h4 class="price text-black" name="productprice" style="font-family:fantasy;text-align:center;">Current price: <span style="font-family:'Adobe Devanagari';color: gray;">RM <asp:Label ID="Label3" runat="server" Text='<%# Eval("Art_Price") %>'/></span></h4>
-
-            <%--Wish_Number:
-            <asp:Label ID="Wish_Number" runat="server" Text='<%# Eval("Wish_Number") %>' />
-            <br />
-            Wish_Cus_Id:
-            <asp:Label ID="Wish_Cus_Id" runat="server" Text='<%# Eval("Wish_Cus_Id") %>' />
-            <br />
-            Wish_Art_id:
-            <asp:Label ID="Wish_Art_Id" runat="server" Text='<%# Eval("Wish_Art_Id") %>' />
-            <br />
-            <asp:Label ID="Wish_Art_Price" runat="server" Text='<%# Eval("Art_Price") %>'/>--%>
-            <br />
-            <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("Wish_Art_Id") %>' OnClick="BtnSubmit_Remove" style="font-family:Comic Sans;display:inline-block;text-align:center;"><p style="color: deepskyblue;padding-left:30px;padding-right:50px"><i class="fas fa-trash-alt" style="color: cornflowerblue"></i> Remove from wish list</p></asp:LinkButton>
-            <asp:LinkButton ID="LinkButton2" runat="server" CommandArgument='<%# Eval("Wish_Art_Id") %>' OnClick="BtnSubmit_Purchase" style="font-family:Comic Sans;display:inline-block;text-align:center;"><p style="color: deepskyblue;padding-left:30px;padding-right:50px"> <i class="fa fa-shopping-cart" style="color: cornflowerblue"></i>    Add to purchase</p></asp:LinkButton>
+            <div class="text-center pt-4">
+                <h5 class="product-title" name="productname"><asp:Label ID="Label1" runat="server" Text='<%# Eval("Art_Name") %>'/></h5>
+                <strong><p class="price text-black" name="productprice">Current price: <span>RM <asp:Label ID="Label3" runat="server" Text='<%# Eval("Art_Price") %>'/></span></p></strong>
+                </div>
+            <div>
+            <asp:LinkButton ID="LinkButton1" class="buttondesign" runat="server" CommandArgument='<%# Eval("Wish_Art_Id") %>' OnClick="BtnSubmit_Remove"><i class="fas fa-trash-alt" style="color: white"></i> Remove from wish list</asp:LinkButton>
+                <div style="height:30px;"> </div>
+            <asp:LinkButton ID="LinkButton2" class="buttondesign" runat="server" CommandArgument='<%# Eval("Wish_Art_Id") %>' OnClick="BtnSubmit_Purchase"><i class="fa fa-shopping-cart" style="color: white"></i>    Add to purchase</asp:LinkButton>
             </div>
-            </div>
-<br />
+             
+            <br />
+            
+                </div>
         </ItemTemplate>
+
     </asp:DataList>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Artdist %>" SelectCommand="SELECT ART.Art_Name, ART.Art_Price, WISH_LIST.Wish_Number, WISH_LIST.Wish_Cus_Id, WISH_LIST.Wish_Art_Id, WISH_LIST.Wish_Art_Image, ART.Art_Quantity FROM WISH_LIST INNER JOIN ART ON WISH_LIST.Wish_Art_Id = ART.Art_Id WHERE (WISH_LIST.Wish_Cus_Id = @Wish_Cus_Id) AND (ART.Art_Quantity &lt;&gt; 0)">
         <SelectParameters>
@@ -182,7 +163,7 @@ else
         </SelectParameters>
     </asp:SqlDataSource>
     <br />
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up" style="color: white"></i></button>
         <script>
             //Get the button
             var mybutton = document.getElementById("myBtn");
