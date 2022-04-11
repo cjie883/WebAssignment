@@ -43,7 +43,7 @@ if(Session["CustomerID"] == null && Session["ArtistID"] == null || Request.Query
 else 
 {
 %>
-    <asp:Label ID="Label1" runat="server" Visible="False" ></asp:Label>
+    <asp:Label ID="Label1" runat="server" Visible="true" ></asp:Label>
     <asp:Label ID="Label2" runat="server" Visible="False" ></asp:Label>
   <center class="bigCon">
             <div class="card">

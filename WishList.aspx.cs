@@ -60,54 +60,6 @@ namespace WebAssignment
             Server.Transfer("WishList.aspx");
         }
 
-        protected void BtnSubmit_Purchase(object sender, EventArgs e)
-        {
-            //pass art id
-            //int id = int.Parse(Wish_Art_Id.Text);
-            //int price = int.Parse(Art_Price_Show.Text);
-            int cus = int.Parse(Session["CustomerID"].ToString());//session after login
-
-            var art = (LinkButton)sender;
-            string art_id = art.CommandArgument.ToString();
-
-            //var art = (LinkButton)sender;
-            //Session["Wish_Art_Id"] = art;
-            //int art_id = Convert.ToInt32(Session["Wish_Art_Id"]);
-
-            double Art_Price = 0;
-            SqlConnection con;
-            string strCon = ConfigurationManager.ConnectionStrings["Artdist"].ConnectionString;
-            con = new SqlConnection(strCon);
-            con.Open();
-
-            string strSelect = "Select * from ART where Art_Id = " + art_id;
-
-            SqlCommand cmdSelect = new SqlCommand(strSelect, con);
-            SqlDataReader dtrInfo = cmdSelect.ExecuteReader();
-
-            if (dtrInfo.HasRows)// has record(s)
-            {
-                if (dtrInfo.Read())
-                {
-                    Art_Price = Convert.ToDouble(dtrInfo["Art_Price"].ToString());
-                }
-
-                Session["Pay_Art_Price"] = Art_Price;
-
-            }
-            else
-            {
-
-            }
-
-
-
-            con.Close();
-
-            //int art_price = int.Parse();
-            //Session["Pay_Art_Id"] = art_id;
-
-            //Response.Redirect("Payment.aspx");
-        }
+        
     }
 }

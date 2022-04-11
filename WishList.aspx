@@ -149,7 +149,6 @@ else
             <div>
             <asp:LinkButton ID="LinkButton1" class="buttondesign" runat="server" CommandArgument='<%# Eval("Wish_Art_Id") %>' OnClick="BtnSubmit_Remove"><i class="fas fa-trash-alt" style="color: white"></i> Remove from wish list</asp:LinkButton>
                 <div style="height:30px;"> </div>
-            <asp:LinkButton ID="LinkButton2" class="buttondesign" runat="server" CommandArgument='<%# Eval("Wish_Art_Id") %>' OnClick="BtnSubmit_Purchase"><i class="fa fa-shopping-cart" style="color: white"></i>    Add to purchase</asp:LinkButton>
             </div>
              
             <br />

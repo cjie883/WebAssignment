@@ -138,7 +138,7 @@ if(Session["CustomerID"] == null || Session["ArtistID"] != null)
 else 
 {
 %>
-
+    
     <header>
         <div class="bg-image">
         <div class="bg-text">      
@@ -169,7 +169,6 @@ else
             <div>
             <asp:LinkButton ID="LinkButton1" class="buttondesign" runat="server" CommandArgument='<%# Eval("Cart_Art_Id") %>' OnClick="BtnSubmit_Remove"><i class="fas fa-trash-alt" style="color: white"></i> Remove from Cart</asp:LinkButton>
                 <div style="height:30px;"> </div>
-            <asp:LinkButton ID="LinkButton2" class="buttondesign" runat="server" CommandArgument='<%# Eval("Cart_Art_Id") %>' OnClick="BtnSubmit_Purchase"><i class="fa fa-shopping-cart" style="color: white"></i>    Add to purchase</asp:LinkButton>
             </div>
              
             <br />
@@ -183,7 +182,7 @@ else
        <br />
         <center><asp:Label ID="lbltext" runat="server" CssClass="label1" Text=""></asp:Label>
         <asp:Label ID="labelTotal" runat="server" CssClass="label1" Text=""></asp:Label><br />
-        <asp:Button ID="lblbutton" class="buttondesign" runat="server" Text="Proceed to Payment" /></center>
+        <asp:Button ID="lblbutton" class="buttondesign" runat="server" Text="Proceed to Payment" OnClick="lblbutton_Click1" /></center>
         <br />
     </p>
 
