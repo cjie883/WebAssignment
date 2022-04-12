@@ -5,8 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <style>
         body {
-    background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: #ECECEC;
+background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../imgs/loginbg.jpg");
 }
     </style>
     <link href="css/login.css" rel="stylesheet">

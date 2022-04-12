@@ -5,6 +5,7 @@
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <style>
+
         .title {
             font-family: 'Montserrat', sans-serif;
             font-size: 40px;
