@@ -2,8 +2,37 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <link rel="stylesheet" type="text/css" href="css/add.css">
+    
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <style>
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #000;
+        }
+
+         .buttondesign-back{
+            border-radius: 20px;
+            border: 1px solid red;
+            background-color: red;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+                 .buttondesign-back:hover {
+                background-color: #C45AEC;
+                border: 1px solid #C45AEC;
+                text-decoration: none;
+                color: white;
+            }
+
+        
+    </style>
     <%--if no login cant see this page--%>
 <%
 if(Session["CustomerID"] == null)
@@ -19,16 +48,16 @@ if(Session["CustomerID"] == null)
     <center>
         <asp:Image ID="Image2" runat="server" style="width:220px;height:320px;"  ImageUrl="~/imgs/artCry.gif"/>
         <br />
-        <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Names="Algerian" Font-Size="XX-Large" ForeColor="Black" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"> ERROR 404</asp:Label>
+        <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Names="'Montserrat', sans-serif" Font-Size="XX-Large" ForeColor="Black" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"> ERROR 404</asp:Label>
         <br />
-        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/home.aspx" style="font-family:Arial Rounded MT Bold"><p style="color: black;"> <i class="fas fa-home" style="color: black;"></i> Click me back to Home page</p></asp:LinkButton>
+        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/home.aspx" style="font-family:'Montserrat', sans-serif"><p style="color: black;"> <i class="fas fa-home" style="color: black;"></i> Click me back to Home page</p></asp:LinkButton>
     </center>
 <% } 
 else 
 {
 %>
-    <div style="margin-left: auto; margin-right: auto; text-align: center;">
-    <asp:Label ID="txtPurchaseHistory" runat="server" Text="My Purchase History" Font-Overline="False" Font-Strikeout="False" Font-Bold="True" Font-Italic="False" Font-Names="Arial Black" Font-Size="XX-Large" Font-Underline="False"></asp:Label>
+    <div style="margin-top:40px; text-align: center;">
+    <asp:Label ID="txtPurchaseHistory" runat="server" Text="My Purchase History" class="title"></asp:Label>
         <br />
     <br />
     </div>
@@ -37,18 +66,18 @@ else
         <asp:Label ID="Label4" runat="server" Visible="False"></asp:Label>
         <asp:Image ID="Image1" runat="server" Visible="False" style="width:200px;height:150px;"  ImageUrl="~/imgs/notFound.gif"/>
         <br />
-        <asp:Label ID="Label2" runat="server" Visible="False" Font-Bold="True" Font-Names="Algerian" Font-Size="XX-Large" ForeColor="White" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Visible="False" Font-Bold="True" Font-Names="'Montserrat', sans-serif" Font-Size="XX-Large" ForeColor="Black" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"></asp:Label>
     </center>
     <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#E7E7FF" BorderWidth="1px" CellPadding="10" GridLines="Horizontal" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AutoGenerateColumns="False" DataKeyNames="Payment_Id" DataSourceID="SqlDataSource1" Height="300px" Width="900px" HorizontalAlign="Center" BorderStyle="None" Font-Bold="False">
         <AlternatingRowStyle BackColor="#F7F7F7" />
         <Columns>
-            <asp:BoundField DataField="Payment_Id" HeaderText="Payment_Id" InsertVisible="False" ReadOnly="True" SortExpression="Payment_Id" />
+            <asp:BoundField DataField="Payment_Id" HeaderText="Payment Id" InsertVisible="False" ReadOnly="True" SortExpression="Payment_Id" />
             <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
             <asp:BoundField DataField="Amount" HeaderText="Amount" SortExpression="Amount" />
         </Columns>
         <EditRowStyle BorderWidth="0px" />
         <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
-        <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" BorderWidth="2px" Font-Size="Large" ForeColor="#F7F7F7" />
+        <HeaderStyle BackColor="#C45AEC" Font-Bold="True" BorderWidth="1px" Font-Size="Medium" ForeColor="#F7F7F7" />
         <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
         <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
         <SelectedRowStyle BackColor="#738A9C" ForeColor="#F7F7F7" Font-Bold="True" />
@@ -65,17 +94,11 @@ else
     <br />
     <div style="margin-left: auto; margin-right: auto; text-align: center;">
         <br />
-    <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Home.aspx" Font-Bold="True" Font-Size="Large" Font-Underline="False"><p style="color: white"><i class="fa fa-arrow-left" style="color: white"></i>Back to Home </p></asp:LinkButton>
+    <asp:LinkButton ID="LinkButton1" CssClass="buttondesign-back" runat="server" PostBackUrl="~/Home.aspx"><i class="fa fa-arrow-left" style="color: white"></i>  Back to Home</asp:LinkButton>
     </div>
     <br />
     <br />
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+
     <% } %>
 </asp:Content>

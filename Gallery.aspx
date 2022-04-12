@@ -80,22 +80,22 @@
          <div class="wrapper" data-aos="fade-up" data-aos-duration="3000">
           <div class="slider">
             <div class="slide">
-                <img src="imgs/m1.jpg" />
-                <img src="imgs/l1.jpg" />
-                <img src="imgs/c1.jpg" />
-                <img src="imgs/c2.jpg" />
-                <img src="imgs/m2.jpg" />
-                <img src="imgs/l4.jpg" />
-                <img src="imgs/l3.jpg" />
+                <img src="imgs/Mona_Lisa.jpg" />
+                <img src="imgs/Improvisation._Dreamy.jpg" />
+                <img src="imgs/Improvisation._Deluge.jpg" />
+                <img src="imgs/Ribbon_with_Square.jpg" />
+                <img src="imgs/Composition_VII.jpg" />
+                <img src="imgs/p2.jpg" />
+                <img src="imgs/p1.jpg" />
             </div>
             <div class="slide">
-              <img src="imgs/c3.jpg" />
-              <img src="imgs/l4.jpg" />
-              <img src="imgs/m2.jpg" />
-              <img src="imgs/m3.jpg" />
-              <img src="imgs/c3.jpg" />
-              <img src="imgs/l2.jpg" />
-              <img src="imgs/c2.jpg" />
+              <img src="imgs/Mona_Lisa.jpg" />
+                <img src="imgs/Improvisation._Dreamy.jpg" />
+                <img src="imgs/Improvisation._Deluge.jpg" />
+                <img src="imgs/Ribbon_with_Square.jpg" />
+                <img src="imgs/Composition_VII.jpg" />
+                <img src="imgs/p2.jpg" />
+                <img src="imgs/p1.jpg" />
             </div>
           </div>
       </div>

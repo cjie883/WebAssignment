@@ -29,7 +29,7 @@ namespace WebAssignment
                 
                 string price = (string)(Session["total"]);
 
-                txtTotal.Text = "RM " + price.ToString();
+                lblTotal.Text = "RM " + price.ToString();
             }
             
         }
@@ -78,7 +78,8 @@ namespace WebAssignment
 
             insertCommand.ExecuteNonQuery();
 
-            string strDelete = "Delete from WISH_LIST Where Wish_Cus_Id=@cus_id";
+            string strDelete = "Delete from NCART Where Cart_Cus_Id=@cus_id";
+            //string strDelete = "Delete from WISH_LIST Where Wish_Cus_Id=@cus_id";
             //string strDelete = "DELETE FROM [WISH_LIST] WHERE ([Wish_Cus_Id], [Wish_Art_Id]) Values (@cus, @remove_id)";
 
 
@@ -124,6 +125,7 @@ namespace WebAssignment
 
             MailMessage msg = new MailMessage();
             msg.To.Add("leongjc-wm19@student.tarc.edu.my");
+            msg.To.Add("soonpengiv@gmail.com");
             msg.From = new MailAddress("trytosimple2020@gmail.com");
             msg.Subject = "Payment Receipt";
             msg.IsBodyHtml = true;

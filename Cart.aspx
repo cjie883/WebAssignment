@@ -114,6 +114,8 @@
     }
 
 
+
+
     </style>
     <%--if no login cant see this page--%>
 <%
@@ -130,9 +132,9 @@ if(Session["CustomerID"] == null || Session["ArtistID"] != null)
     <center>
         <asp:Image ID="Image2" runat="server" style="width:220px;height:320px;"  ImageUrl="~/imgs/artCry.gif"/>
         <br />
-        <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Names="Algerian" Font-Size="XX-Large" ForeColor="Black" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"> ERROR 404</asp:Label>
+        <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Names="'Montserrat', sans-serif" Font-Size="XX-Large" ForeColor="Black" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"> ERROR 404</asp:Label>
         <br />
-        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Home.aspx" style="font-family:Arial Rounded MT Bold"><p style="color: black;"> <i class="fas fa-home" style="color: black;"></i> Click me back to Home page</p></asp:LinkButton>
+        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Home.aspx" style="font-family:'Montserrat', sans-serif"><p style="color: black;"> <i class="fas fa-home" style="color: black;"></i> Click me back to Home page</p></asp:LinkButton>
     </center>
 <% } 
 else 
@@ -156,7 +158,7 @@ else
         <asp:Label ID="Label2" runat="server" Visible="False" Font-Bold="True" Font-Names="'Montserrat', sans-serif" Font-Size="XX-Large" ForeColor="Black" style="padding-top:50px;padding-bottom:100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"></asp:Label>
     </center>
 
-    <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource2" DataKeyField="Cart_Number" class="col-md-4 mb-5" CssClass="auto-style2" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Center" RepeatDirection="Horizontal" OnSelectedIndexChanged="DataList2_SelectedIndexChanged">
+    <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource2" DataKeyField="Cart_Number" class="col-md-4 mb-5"  RepeatColumns="3" CssClass="auto-style2" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Center" RepeatDirection="Horizontal" OnSelectedIndexChanged="DataList2_SelectedIndexChanged">
     <ItemTemplate>
             <div class="Wishlist">
                
@@ -164,16 +166,18 @@ else
             <br />
             <div class="text-center pt-4">
                 <h5 class="product-title" name="productname"><asp:Label ID="Label1" runat="server" Text='<%# Eval("Art_Name") %>'/></h5>
-                <strong><p class="price text-black" name="productprice">Current price: <span>RM <asp:Label ID="Label3" runat="server" Text='<%# Eval("Art_Price") %>'/></span></p></strong>
+                <strong><p class="price text-black" name="productprice">Price: <span>RM <asp:Label ID="Label3" runat="server" Text='<%# Eval("Art_Price") %>'/></span></p></strong>
+                <div style="height: 20px;"></div> 
                 </div>
             <div>
             <asp:LinkButton ID="LinkButton1" class="buttondesign" runat="server" CommandArgument='<%# Eval("Cart_Art_Id") %>' OnClick="BtnSubmit_Remove"><i class="fas fa-trash-alt" style="color: white"></i> Remove from Cart</asp:LinkButton>
-                <div style="height:30px;"> </div>
+                
             </div>
              
-            <br />
+
             
                 </div>
+        <div style="height: 50px;"></div>
         </ItemTemplate>
 
     </asp:DataList>

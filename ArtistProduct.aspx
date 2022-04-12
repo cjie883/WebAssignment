@@ -96,9 +96,9 @@
     <center>
         <asp:Image ID="Image2" runat="server" Style="width: 220px; height: 320px;" ImageUrl="~/imgs/artCry.gif" />
         <br />
-        <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Names="Algerian" Font-Size="XX-Large" ForeColor="Black" Style="padding-top: 50px; padding-bottom: 100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"> ERROR 404</asp:Label>
+        <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Names="'Montserrat', sans-serif" Font-Size="XX-Large" ForeColor="Black" Style="padding-top: 50px; padding-bottom: 100px;" BorderColor="Aqua" BorderStyle="None" BorderWidth="5px" Height="16px"> ERROR 404</asp:Label>
         <br />
-        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Home.aspx" Style="font-family: Arial Rounded MT Bold"><p style="color: black;"> <i class="fas fa-home" style="color: black;"></i> Click me back to Home page</p></asp:LinkButton>
+        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Home.aspx" Style="font-family: 'Montserrat', sans-serif"><p style="color: black;"> <i class="fas fa-home" style="color: black;"></i> Click me back to Home page</p></asp:LinkButton>
     </center>
     <% }
         else

@@ -1,0 +1,169 @@
+﻿body {
+}
+
+.box {
+    margin: 55px 0px 55px 0px;
+    padding: 35px 0px 35px 0px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 620px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.texttitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: #000;
+}
+
+.inputlabel {
+    color: #000;
+    margin-right: 300px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: left;
+    width: 155px;
+}
+
+.inputlabeltotal {
+    color: #000;
+    margin-right: 20px;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+.errorlabel {
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    font-size: 15px;
+}
+
+.forgot a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+    .forgot a:hover {
+        color: #C45AEC;
+    }
+
+.accounterrorlabel {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 0%;
+    color: red;
+    font-size: 18px;
+}
+
+.inputtextbox {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #eee;
+    width: 73%;
+}
+
+.registerlbl {
+    color: #000;
+    font-size: 16px;
+}
+
+.buttondesign {
+    border-radius: 20px;
+    border: 1px solid #C45AEC;
+    background-color: #C45AEC;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.buttondesign-aa {
+    border-radius: 20px;
+    border: 1px solid red;
+    background-color: red;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    
+}
+
+    .buttondesign:hover {
+        background-color: red;
+        border: 1px solid red;
+    }
+
+.buttondesign-aa:hover {
+    background-color: #C45AEC;
+    color: white;
+    border: 1px solid #C45AEC;
+    text-decoration: none;
+}
+
+.form__radios {
+    display: grid;
+    gap: 1em;
+    padding: 12px 15px;
+    width: 80%;
+}
+
+.form__radio {
+    align-items: center;
+    background-color: #fefdfe;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgb(0 0 0 / 26%);
+    display: flex;
+    padding: 1em;
+    width: 100%;
+}
+
+.inputlabelcard {
+    color: #000;
+    margin-left: 55px;
+    font-weight: bold;
+    display: inline-block;
+    width: 180px;
+    text-align: left;
+}
+
+.inputlabelcard-right {
+    color: #000;
+    margin-right: 105px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: left;
+    width: 180px;
+}
+
+.inputtextboxcard {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #eee;
+    width: 70%;
+    margin-left: 80px;
+   
+}
+
+.inputtextboxcard-right {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #eee;
+    width: 70%;
+    margin-right: 80px;
+}
+
+

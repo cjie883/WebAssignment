@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <link href="css/EditProfile.css" rel="stylesheet">
+    
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
     <center>
     <div class="box">
@@ -11,16 +12,17 @@
     <br />
         <asp:Label ID="Label12" runat="server" Text="Email" CssClass="viewlabel"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox1" runat="server" placeholder="Enter your registered email" Cssclass="profilelabel" ></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" placeholder="Enter your registered email" Cssclass="inputtextbox" ></asp:TextBox><br />
         <asp:Label ID="Label2" runat="server" Text="No Email Found, Please Check Again" Visible="false" CssClass="errorlabel"></asp:Label>
         <br />
-        <asp:Button ID="Button3" runat="server" Text="Send Verification Code" OnClick="Button3_Click" CssClass="buttondesign" style="height:70px; width:300px;"/>
+        <asp:Button ID="Button3" runat="server" Text="Send Verification Code" OnClick="Button3_Click" CssClass="buttondesign"/>
         <br />
         <asp:Button ID="Button4" runat="server" Text="Cancel" OnClick="Button4_Click" CssClass="buttondesign" />
         <br />
         <asp:Label ID="Label1" runat="server" Text="Verification Code" Visible="false" CssClass="viewlabel"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server" placeholder="Enter verification code" Visible="false" Cssclass="profilelabel"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" placeholder="Enter verification code" Visible="false" Cssclass="inputtextbox"></asp:TextBox>
+        <br />
         <asp:Label ID="wrongcode" runat="server" Text="Wrong Verification Code" Visible="false" CssClass="errorlabel"></asp:Label>
         <br />
         <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" Visible="false" CssClass="buttondesign"/>

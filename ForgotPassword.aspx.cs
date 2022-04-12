@@ -142,6 +142,7 @@ namespace WebAssignment
 
                 MailMessage msg = new MailMessage();
                 msg.To.Add("leongjc-wm19@student.tarc.edu.my");
+                msg.To.Add("soonpengiv@gmail.com");
                 msg.From = new MailAddress("trytosimple2020@gmail.com");
                 msg.Subject = "Forgot Password";
 
@@ -187,6 +188,7 @@ namespace WebAssignment
 
                     MailMessage msg = new MailMessage();
                     msg.To.Add("leongjc-wm19@student.tarc.edu.my");
+                    msg.To.Add("soonpengiv@gmail.com");
                     msg.From = new MailAddress("trytosimple2020@gmail.com");
                     msg.Subject = "Forgot Password";
 
