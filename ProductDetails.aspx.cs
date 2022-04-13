@@ -15,7 +15,7 @@ namespace WebAssignment
         {
             if (Session["ArtistID"] != null)
             {
-                LinkButton1.Visible = false;
+                
                 LinkButton2.Visible = false;
                 LinkButton4.Visible = false;
                 LinkButton3.PostBackUrl = "ArtistProduct.aspx";
@@ -73,7 +73,6 @@ namespace WebAssignment
                         //Art_Quantity_Show.Text = Art_Quantity.ToString();
                         if (Art_Quantity == 0)
                         {
-                            LinkButton1.Enabled = false;
                             LinkButton2.Enabled = false;
                             Art_Quantity_Show.Text = "Out of stock";
                         }
@@ -162,7 +161,7 @@ namespace WebAssignment
                         //Art_Quantity_Show.Text = Art_Quantity.ToString();
                         if (Art_Quantity == 0)
                         {
-                            LinkButton1.Enabled = false;
+                            
                             LinkButton2.Enabled = false;
                             Art_Quantity_Show.Text = "Out of stock";
                         }

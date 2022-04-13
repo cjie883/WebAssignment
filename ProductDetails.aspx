@@ -85,7 +85,6 @@ else
             </div>
                        <div class="button-con">
         <asp:LinkButton ID="LinkButton4" runat="server" class="buttondesign" CommandArgument='<%# Eval("Art_Id") %>' OnClick="BtnSubmit_Artist"><i class="fas fa-address-card"></i> View artist</asp:LinkButton>
-        <asp:LinkButton ID="LinkButton1" runat="server" class="buttondesign" CommandArgument='<%# Eval("Art_Id") %>' OnClick="BtnSubmit_Purchase"><i class="fa fa-shopping-cart"></i>   Purchase</asp:LinkButton>
         <asp:LinkButton ID="LinkButton6" runat="server" class="buttondesign" CommandArgument='<%# Eval("Art_Id") %>' OnClick="BtnSubmit_Cart"><i class="fa fa-shopping-cart"></i> Add to Cart</asp:LinkButton>
         <asp:LinkButton ID="LinkButton2" runat="server" class="buttondesign" CommandArgument='<%# Eval("Art_Id") %>' OnClick="BtnSubmit_Wish"><i class="fas fa-heart mr-1"></i>Wish list</asp:LinkButton>
         <asp:LinkButton ID="LinkButton3" runat="server" class="buttondesign-back" PostBackUrl="~/Product.aspx"><i class="fa fa-arrow-left"></i>      Back to Art page</asp:LinkButton>
