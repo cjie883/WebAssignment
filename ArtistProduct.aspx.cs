@@ -57,10 +57,12 @@ namespace WebAssignment
             cmdDelete.Parameters.AddWithValue("@artist_id", artist);
             cmdDelete.Parameters.AddWithValue("@remove_id", remove);
 
-            //cmdDelete.ExecuteNonQuery();
+            cmdDelete.ExecuteNonQuery();
             con.Close();
 
-            Response.Redirect("ArtistProduct.aspx");
+            Response.Write("<script>alert('Product has been removed')</script>");
+            Server.Transfer("ArtistProduct.aspx");
+           
         }
 
         protected void BtnSubmit_Add(object sender, EventArgs e)

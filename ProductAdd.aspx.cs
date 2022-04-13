@@ -64,8 +64,9 @@ namespace WebAssignment
 
                     theImageCommand.ExecuteNonQuery();
                     thesqlconnection.Close();
-
-                    Response.Redirect("ArtistProduct.aspx");
+                    Response.Write("<script>alert('Product added successfully')</script>");
+                    Server.Transfer("ArtistProduct.aspx");
+                    //Response.Redirect("ArtistProduct.aspx");
                 }
             }
 
