@@ -20,6 +20,7 @@ namespace WebAssignment
 
                 if (Session["CustomerID"] != null)
                 {
+                    LinkButton99.Visible = true;
                     LinkButton10.Visible = true;
                     LinkButton15.Visible = true;
                     LinkButton13.Visible = true;
@@ -90,6 +91,11 @@ namespace WebAssignment
         protected void LinkButton16_Click(object sender, EventArgs e)
         {
             Response.Redirect("PaymentHistory.aspx");
+        }
+
+        protected void LinkButton99_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Gallery.aspx");
         }
     }
 }

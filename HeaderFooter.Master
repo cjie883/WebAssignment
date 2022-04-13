@@ -103,7 +103,8 @@
                             <a class="nav-link" href="Home.aspx">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Gallery.aspx">Gallery</a>
+                            <%--<a class="nav-link" href="Gallery.aspx">Gallery</a>--%>
+                            <asp:LinkButton class="nav-link" ID="LinkButton99" runat="server" Visible="False" OnClick="LinkButton99_Click">Gallery</asp:LinkButton>
                         </li>
                        <%-- <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton15" runat="server" Visible="False" OnClick="LinkButton15_Click">Category</asp:LinkButton>
