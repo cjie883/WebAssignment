@@ -89,37 +89,6 @@ namespace WebAssignment
 
             cmdDelete.ExecuteNonQuery();
 
-            //string strSelect = "Select Art_Quantity, Art_Name from ART Where Art_Id = @artId";
-           
-
-            //SqlCommand cmdSelect = new SqlCommand(strSelect, paymentConnection);
-            //cmdSelect.Parameters.AddWithValue("@artId", Session["Pay_Art_Id"].ToString());           
-
-            //cmdSelect.Connection = paymentConnection;
-
-            //SqlDataReader selectQuantity = cmdSelect.ExecuteReader();
-
-            //if (selectQuantity.Read())
-            //{
-            //    quantity = (int)selectQuantity["Art_Quantity"];
-            //    artName = selectQuantity["Art_Name"].ToString();
-
-            //    if (quantity > 0)
-            //    {
-            //        quantity = quantity - 1;
-            //    }
-            //}
-
-            //selectQuantity.Close();            
-
-            //string strUpdate = "UPDATE ART SET Art_Quantity = @quantity WHERE Art_Id = @artId";
-
-            //SqlCommand cmdUpdate = new SqlCommand(strUpdate, paymentConnection);
-
-            //cmdUpdate.Parameters.AddWithValue("@artId", Session["Pay_Art_Id"].ToString());
-            //cmdUpdate.Parameters.AddWithValue("@quantity", quantity.ToString());
-
-            //cmdUpdate.ExecuteNonQuery();
 
             string body = string.Empty;
 
